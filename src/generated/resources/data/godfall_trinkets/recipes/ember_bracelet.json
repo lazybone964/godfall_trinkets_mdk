@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "pattern": [
+    "CLC",
+    "F F",
+    " C "
+  ],
+  "result": {
+    "item": "godfall_trinkets:ember_bracelet"
+  },
+  "show_notification": true
+}

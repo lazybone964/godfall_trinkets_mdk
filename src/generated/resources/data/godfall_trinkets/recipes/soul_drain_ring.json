@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    "R#R",
+    "F F",
+    "RNR"
+  ],
+  "result": {
+    "item": "godfall_trinkets:soul_drain_ring"
+  },
+  "show_notification": true
+}

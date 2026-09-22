@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WEW",
+    "F F",
+    "W#W"
+  ],
+  "result": {
+    "item": "godfall_trinkets:prosperity_bracelet"
+  },
+  "show_notification": true
+}

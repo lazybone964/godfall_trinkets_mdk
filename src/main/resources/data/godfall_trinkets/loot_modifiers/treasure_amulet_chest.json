@@ -1,0 +1,23 @@
+{
+  "type": "godfall_trinkets:trinket_chest_loot",
+  "conditions": [],
+  "trinket": "godfall_trinkets:treasure_amulet",
+  "extra_items": [
+    { "item": "minecraft:diamond",    "weight": 3, "min": 1, "max": 3 },
+    { "item": "minecraft:emerald",   "weight": 4, "min": 2, "max": 5 },
+    { "item": "minecraft:gold_ingot", "weight": 5, "min": 2, "max": 6 },
+    { "item": "minecraft:iron_ingot", "weight": 6, "min": 3, "max": 8 },
+    {
+      "item": "godfall_trinkets:sharp_edge_stone",
+      "weight": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "item": "godfall_trinkets:curse_slot_unlock_talisman",
+      "weight": 1,
+      "min": 1,
+      "max": 1
+    }
+  ]
+}

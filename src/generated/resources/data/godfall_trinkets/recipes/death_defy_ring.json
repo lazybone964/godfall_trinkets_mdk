@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:magma_cream"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    "G#G",
+    "F F",
+    " R "
+  ],
+  "result": {
+    "item": "godfall_trinkets:death_defy_ring"
+  },
+  "show_notification": true
+}

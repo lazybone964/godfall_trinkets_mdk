@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_abyss_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:abyss_god_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:abyss_conquest_boots_smith"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_abyss_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:abyss_conquest_boots_smith"
+    ]
+  },
+  "sends_telemetry_event": false
+}

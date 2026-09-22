@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "S": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "B#B",
+    "F F",
+    "BSB"
+  ],
+  "result": {
+    "item": "godfall_trinkets:hunter_ring"
+  },
+  "show_notification": true
+}

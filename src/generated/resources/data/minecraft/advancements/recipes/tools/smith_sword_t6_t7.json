@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:smith_sword_t6_t7"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "smith_t6_up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:wither_blade"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "smith_t6_up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:smith_sword_t6_t7"
+    ]
+  },
+  "sends_telemetry_event": false
+}

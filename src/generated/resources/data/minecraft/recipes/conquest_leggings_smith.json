@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "godfall_trinkets:conquest_ingot"
+  },
+  "base": {
+    "item": "godfall_trinkets:god_leggings"
+  },
+  "result": {
+    "item": "godfall_trinkets:conquest_leggings"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

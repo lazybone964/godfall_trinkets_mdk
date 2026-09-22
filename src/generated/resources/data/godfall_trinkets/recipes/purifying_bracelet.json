@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "T": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "TST",
+    "F F",
+    "T#T"
+  ],
+  "result": {
+    "item": "godfall_trinkets:purifying_bracelet"
+  },
+  "show_notification": true
+}

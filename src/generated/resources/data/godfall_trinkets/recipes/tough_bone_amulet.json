@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "BFB",
+    "N#N",
+    "BFB"
+  ],
+  "result": {
+    "item": "godfall_trinkets:tough_bone_amulet"
+  },
+  "show_notification": true
+}

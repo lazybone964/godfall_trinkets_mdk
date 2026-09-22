@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "godfall_trinkets:diamond_white_blade"
+    },
+    {
+      "item": "godfall_trinkets:godfragment"
+    }
+  ],
+  "result": {
+    "item": "godfall_trinkets:diamond_white_blade"
+  }
+}

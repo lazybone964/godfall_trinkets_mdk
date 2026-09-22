@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "F#F",
+    "FFF"
+  ],
+  "result": {
+    "item": "godfall_trinkets:god_template"
+  },
+  "show_notification": true
+}

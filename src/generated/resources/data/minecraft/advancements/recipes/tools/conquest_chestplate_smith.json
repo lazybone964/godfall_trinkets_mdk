@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_conquest_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:conquest_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:conquest_chestplate_smith"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_conquest_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:conquest_chestplate_smith"
+    ]
+  },
+  "sends_telemetry_event": false
+}

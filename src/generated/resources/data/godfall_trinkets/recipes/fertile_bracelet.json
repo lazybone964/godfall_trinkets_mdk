@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:vine"
+    },
+    "B": {
+      "item": "minecraft:bone_meal"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "S": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "F F",
+    "S#S"
+  ],
+  "result": {
+    "item": "godfall_trinkets:fertile_bracelet"
+  },
+  "show_notification": true
+}

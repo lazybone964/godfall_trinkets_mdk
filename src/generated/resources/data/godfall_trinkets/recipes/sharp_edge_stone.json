@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "G": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    " GG",
+    "G# ",
+    "G  "
+  ],
+  "result": {
+    "item": "godfall_trinkets:sharp_edge_stone"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:soul_sand"
+    },
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NWN",
+    "NNN"
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:wither_skeleton_skull"
+  },
+  "show_notification": true
+}

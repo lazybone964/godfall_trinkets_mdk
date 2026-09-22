@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "pattern": [
+    "IFI",
+    "#L#",
+    "IFI"
+  ],
+  "result": {
+    "item": "godfall_trinkets:forge_amulet"
+  },
+  "show_notification": true
+}

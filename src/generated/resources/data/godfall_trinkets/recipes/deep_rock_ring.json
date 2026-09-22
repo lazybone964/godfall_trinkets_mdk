@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_torch"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "O": {
+      "item": "minecraft:raw_iron"
+    },
+    "R": {
+      "item": "minecraft:raw_gold"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "F F",
+    " R "
+  ],
+  "result": {
+    "item": "godfall_trinkets:deep_rock_ring"
+  },
+  "show_notification": true
+}

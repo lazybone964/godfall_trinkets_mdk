@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_godfragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:godfragment"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:curse_transfer_trinket_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_godfragment",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:curse_transfer_trinket_craft"
+    ]
+  },
+  "sends_telemetry_event": false
+}

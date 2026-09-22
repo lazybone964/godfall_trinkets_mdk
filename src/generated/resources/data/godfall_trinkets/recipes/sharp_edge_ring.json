@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "IFI",
+    "I I",
+    "ISI"
+  ],
+  "result": {
+    "item": "godfall_trinkets:sharp_edge_ring"
+  },
+  "show_notification": true
+}

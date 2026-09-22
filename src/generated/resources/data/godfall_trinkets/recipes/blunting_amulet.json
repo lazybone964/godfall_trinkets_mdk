@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:flint"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "OFO",
+    "O#O",
+    "FOF"
+  ],
+  "result": {
+    "item": "godfall_trinkets:blunting_amulet"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "godfall_trinkets:white_sword_blank"
+  },
+  "result": {
+    "item": "godfall_trinkets:iron_white_sword"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

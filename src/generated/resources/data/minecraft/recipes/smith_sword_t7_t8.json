@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "godfall_trinkets:abyss_god_ingot"
+  },
+  "base": {
+    "item": "godfall_trinkets:warden_sword"
+  },
+  "result": {
+    "item": "godfall_trinkets:abyss_sword"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "godfall_trinkets:abyss_god_ingot"
+  },
+  "base": {
+    "item": "godfall_trinkets:conquest_helmet"
+  },
+  "result": {
+    "item": "godfall_trinkets:abyss_god_helmet"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

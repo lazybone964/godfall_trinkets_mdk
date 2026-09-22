@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "F##",
+    "## "
+  ],
+  "result": {
+    "item": "godfall_trinkets:god_ingot"
+  },
+  "show_notification": true
+}

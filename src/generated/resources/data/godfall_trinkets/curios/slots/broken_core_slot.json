@@ -1,0 +1,9 @@
+{
+  "icon": "godfall_trinkets:slot/broken_core",
+  "order": 0,
+  "render_toggle": true,
+  "size": 1,
+  "slot_type": "broken_core_slot",
+  "toggle": true,
+  "visible": true
+}

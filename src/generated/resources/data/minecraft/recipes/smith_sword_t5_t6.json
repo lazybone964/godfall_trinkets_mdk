@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "godfall_trinkets:wither_shard"
+  },
+  "base": {
+    "item": "godfall_trinkets:war_blade"
+  },
+  "result": {
+    "item": "godfall_trinkets:wither_blade"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

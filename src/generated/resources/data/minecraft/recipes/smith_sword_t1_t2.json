@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "godfall_trinkets:iron_white_sword"
+  },
+  "result": {
+    "item": "godfall_trinkets:diamond_white_blade"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

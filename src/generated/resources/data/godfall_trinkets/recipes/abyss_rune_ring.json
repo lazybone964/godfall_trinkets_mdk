@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:book"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "L#L",
+    "F F",
+    " G "
+  ],
+  "result": {
+    "item": "godfall_trinkets:abyss_rune_ring"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+// 1.20.1	2026-08-11T12:43:17.9648678	Tags for minecraft:item mod id godfall_trinkets
+944d436cd06f2aed268931ba22bb4b321121a86c data/curios/tags/items/back.json
+e2fb593aee2584738adcdc869c526c947bcfe434 data/curios/tags/items/body.json
+8ab12d9f1307e3c5cb177ec1ceb0386eadee29e0 data/curios/tags/items/bracelet.json
+73ace231dedda17d4f78a0a0c9065041d8b44ac2 data/curios/tags/items/broken_core_slot.json
+4636fef23c74ecf53953428cca11bc865b0c88f3 data/curios/tags/items/charm.json
+b2bd4314073af9ed2485b73c8ca89030fc54a006 data/curios/tags/items/curse_transfer.json
+9847c4dc5844d3eb87c68cdb093bb947ae4245d3 data/curios/tags/items/god_shard_slot.json
+e7865abc9c1a3366b4b69abc3b2f39b7bf395af6 data/curios/tags/items/head.json
+ee5bc2980f003d4d9a94e4d0a87e6ed88547560e data/curios/tags/items/necklace.json
+fd3ddf9ba3a0a0740be254bf299515136e3d78ec data/curios/tags/items/ring.json

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:smith_sword_t3_t4"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "smith_t3_up": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:shadow_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "smith_t3_up",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:smith_sword_t3_t4"
+    ]
+  },
+  "sends_telemetry_event": false
+}

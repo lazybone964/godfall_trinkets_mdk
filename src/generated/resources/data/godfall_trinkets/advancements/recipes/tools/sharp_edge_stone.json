@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sharp_edge_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "godfall_trinkets:sharp_edge_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "godfall_trinkets:sharp_edge_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sharp_edge_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "godfall_trinkets:sharp_edge_stone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

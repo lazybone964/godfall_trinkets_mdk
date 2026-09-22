@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "godfall_trinkets:god_ingot"
+    },
+    {
+      "item": "godfall_trinkets:god_ingot"
+    }
+  ],
+  "result": {
+    "item": "godfall_trinkets:conquest_ingot"
+  }
+}

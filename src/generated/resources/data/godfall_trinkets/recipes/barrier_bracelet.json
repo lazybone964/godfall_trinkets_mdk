@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:shield"
+    },
+    "F": {
+      "item": "godfall_trinkets:godfragment"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "N N",
+    "FNF"
+  ],
+  "result": {
+    "item": "godfall_trinkets:barrier_bracelet"
+  },
+  "show_notification": true
+}

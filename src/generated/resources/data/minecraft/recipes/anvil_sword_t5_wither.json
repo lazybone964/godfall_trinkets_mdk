@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "godfall_trinkets:war_blade"
+    },
+    {
+      "item": "godfall_trinkets:wither_shard"
+    }
+  ],
+  "result": {
+    "item": "godfall_trinkets:war_blade"
+  }
+}

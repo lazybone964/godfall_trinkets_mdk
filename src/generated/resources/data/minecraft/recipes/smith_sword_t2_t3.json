@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "godfall_trinkets:godfragment"
+  },
+  "base": {
+    "item": "godfall_trinkets:diamond_white_blade"
+  },
+  "result": {
+    "item": "godfall_trinkets:shadow_sword"
+  },
+  "template": {
+    "item": "godfall_trinkets:god_template"
+  }
+}

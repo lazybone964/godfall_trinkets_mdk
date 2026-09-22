@@ -1,0 +1,332 @@
+package com.lazybones.godfalltrinkets.datagen;
+
+import com.lazybones.godfalltrinkets.GodfallTrinkets;
+import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.LanguageProvider;
+
+public class ModZhCnLangProvider extends LanguageProvider {
+    public ModZhCnLangProvider(PackOutput output) {
+        super(output, GodfallTrinkets.MOD_ID, "zh_cn");
+    }
+    @Override
+    public void addTranslations() {
+        add("itemGroup.godfall_trinkets.godfall_trinkets_tab", "登神残饰");
+        add("item.godfall_trinkets.broken_core", "破厄之核");
+        add("item.godfall_trinkets.curse_transfer_blank", "咒厄坠粗胚");
+        add("item.godfall_trinkets.curse_transfer_trinket", "咒厄转移坠");
+        add("item.godfall_trinkets.curse_slot_unlock_talisman", "恶咒令牌");
+        add("item.godfall_trinkets.godfragment", "神陨碎片");
+        // 磨刀石
+        add("item.godfall_trinkets.sharp_edge_stone", "磨刀石");
+        // 神陨合金锭
+        add("item.godfall_trinkets.god_ingot", "神陨合金锭");
+        add("item.godfall_trinkets.god_template", "神陨合金升级模板");
+        // 盔甲
+        add("item.godfall_trinkets.god_helmet", "诅咒耐受头盔");
+        add("item.godfall_trinkets.god_chestplate", "诅咒耐受胸甲");
+        add("item.godfall_trinkets.god_leggings", "诅咒耐受护腿");
+        add("item.godfall_trinkets.god_boots", "诅咒耐受长靴");
+        // 征伐合金锭
+        add("item.godfall_trinkets.conquest_ingot", "征伐合金锭");
+// 征伐盔甲单件
+        add("item.godfall_trinkets.conquest_helmet", "征伐头盔");
+        add("item.godfall_trinkets.conquest_chestplate", "征伐胸甲");
+        add("item.godfall_trinkets.conquest_leggings", "征伐护腿");
+        add("item.godfall_trinkets.conquest_boots", "征伐战靴");
+// 套装Tooltip
+        add("armor.godfall_trinkets.set_conquest", "【套装：征伐战斗套】");
+        add("armor.godfall_trinkets.conquest_e1", "全套穿戴：减伤，攻击吸取生命值");
+        add("armor.godfall_trinkets.conquest_e2", "单件提升伤害与暴击概率");
+// 原有神陨套翻译保留不用动
+        add("armor.godfall_trinkets.set_god", "【套装：诅咒耐受套】");
+        add("armor.godfall_trinkets.god_1", "全套穿戴：持续生命恢复");
+        add("armor.godfall_trinkets.god_2", "提升伤害抗性，降低诅咒影响");
+        // Boss专属材料
+        add("item.godfall_trinkets.wither_shard", "凋零碎片");
+        add("item.godfall_trinkets.warden_heart", "监守之心");
+        add("item.godfall_trinkets.abyss_god_ingot", "深渊征伐锭");
+
+// 深渊征伐盔甲单件
+        add("item.godfall_trinkets.abyss_god_helmet", "深渊征伐头盔");
+        add("item.godfall_trinkets.abyss_god_chestplate", "深渊征伐胸甲");
+        add("item.godfall_trinkets.abyss_god_leggings", "深渊征伐护腿");
+        add("item.godfall_trinkets.abyss_god_boots", "深渊征伐战靴");
+
+// 套装悬浮描述
+        add("armor.godfall_trinkets.set_abyss_god", "【套装：深渊征伐战甲】");
+        // 单件专属描述键
+        add("armor.godfall_trinkets.abyss_helmet", "头盔：常驻幸运Ⅱ，完全免疫黑暗效果");
+        add("armor.godfall_trinkets.abyss_chest", "胸甲：永久承受伤害-12%，每10秒清除全部负面");
+        add("armor.godfall_trinkets.abyss_legs", "护腿：永久移速提升20%");
+        add("armor.godfall_trinkets.abyss_boots", "战靴：完全免疫坠落伤害");
+        add("armor.godfall_trinkets.abyss_full1", "全套近战伤害提升35%");
+        add("armor.godfall_trinkets.abyss_full2", "每次吸血额外回复2点生命值");
+        add("armor.godfall_trinkets.abyss_full3", "血量低于30%攻击速度提升25%");
+        add("armor.godfall_trinkets.abyss_full4", "自身携带诅咒时，不会放大受到的伤害");
+        add("curios.identifier.broken_core_slot", "破厄之核");
+        add("curios.identifier.charm", "护符");
+        add("curios.identifier.ring", "戒指");
+        add("curios.identifier.bracelet", "手镯");
+        add("curios.identifier.god_shard_slot", "神位碎片");
+        add("curios.identifier.curse_transfer", "咒厄转移");
+        // Curio槽名称
+        add("curios.identifier.head", "头饰");
+        add("curios.identifier.necklace", "项链");
+        add("curios.identifier.body", "胸饰");
+
+// 凋零饰品名称
+        add("item.godfall_trinkets.wither_heart", "枯骨之心");
+        add("item.godfall_trinkets.kings_grip", "王者之握");
+        add("item.godfall_trinkets.wither_crown", "凋零王冠");
+        add("item.godfall_trinkets.wither_spine", "凋零脊骨坠");
+// 监守者饰品名称
+        add("item.godfall_trinkets.warden_eye", "幽匿之眼");
+        add("item.godfall_trinkets.warden_pulse", "幽匿脉动");
+        add("item.godfall_trinkets.warden_weight", "幽匿重压");
+        add("item.godfall_trinkets.warden_armorbreak", "幽匿破甲");
+
+// 饰品Tooltip描述
+        add("tooltip.godfall_trinkets.desc.wither_heart.line1", "完全免疫凋零效果");
+        add("tooltip.godfall_trinkets.desc.wither_heart.line2", "攻击20%概率给目标附加3秒凋零");
+
+        add("tooltip.godfall_trinkets.desc.kings_grip.line1", "飞行状态近战伤害+25%，落地失效");
+
+        add("tooltip.godfall_trinkets.desc.wither_crown.line1", "对生命值高于自身敌人伤害+30%");
+        add("tooltip.godfall_trinkets.desc.wither_crown.line2", "目标附带凋零时额外再+30%伤害");
+
+        add("tooltip.godfall_trinkets.desc.wither_spine.line1", "受到伤害时，将30%伤害转化为即时治疗");
+
+        add("tooltip.godfall_trinkets.desc.warden_eye.line1", "亮度＜15，每低1点幸运+1，最高+15");
+
+        add("tooltip.godfall_trinkets.desc.warden_pulse.line1", "亮度＜15，每低1点回血速度+1%，最高+15%");
+
+        add("tooltip.godfall_trinkets.desc.warden_weight.line1", "亮度＜15，每低1点承伤-1%，最高-15%");
+
+        add("tooltip.godfall_trinkets.desc.warden_armorbreak.line1", "亮度＜15，每低1点攻击5%概率无视护甲，最高75%");
+        add("item.godfall_trinkets.dragon_soul", "末影龙魂");
+        add("item.godfall_trinkets.dragon_core_heart", "龙核之心");
+        add("item.godfall_trinkets.eye_of_the_end", "终末之眼");
+        add("item.godfall_trinkets.crystal_crown", "残晶冠冕");
+        add("item.godfall_trinkets.dragon_spine_end", "寂灭龙脊");
+
+// 龙核之心
+        add("tooltip.godfall_trinkets.desc.dragon_core_heart.line1", "完全免疫龙息与冲撞伤害");
+        add("tooltip.godfall_trinkets.desc.dragon_core_heart.line2", "对凋零、末影龙、监守者全部Boss伤害+40%");
+        add("tooltip.godfall_trinkets.desc.dragon_core_heart.line3", "对末影人、潜影贝等末地生物伤害+40%");
+
+// 终末之眼
+        add("tooltip.godfall_trinkets.desc.eye_of_the_end.line1", "终末回响：致命伤消耗末影珍珠，回30%生命并瞬移5格安全处");
+        add("tooltip.godfall_trinkets.desc.eye_of_the_end.line2", "该效果冷却1游戏小时");
+        add("tooltip.godfall_trinkets.desc.eye_of_the_end.line3", "身处末地，所有承受伤害降低15%");
+
+// 残晶冠冕（修正描述，区分当前血/血量上限）
+        add("tooltip.godfall_trinkets.desc.crystal_crown.line1", "佩戴时强制将当前生命值锁定为1点，生命上限不受影响");
+        add("tooltip.godfall_trinkets.desc.crystal_crown.line2", "自身护甲数值提升200%");
+        add("tooltip.godfall_trinkets.desc.crystal_crown.line3", "盔甲韧性数值提升100%");
+
+// 寂灭龙脊
+        add("tooltip.godfall_trinkets.desc.dragon_spine_end.line1", "血量低于30%暴击伤害+60%");
+        add("tooltip.godfall_trinkets.desc.dragon_spine_end.line2", "受伤25%概率反弹30%龙系伤害");
+        add("tooltip.godfall_trinkets.desc.dragon_spine_end.line3", "血量越低，移速与攻速同步提升");
+        add("tooltip.godfall_trinkets.desc.dragon_spine_end.line4", "血量越低全伤害越高，空血时最高增伤100%");
+        // ====================== 九阶长剑 物品名
+        add("item.godfall_trinkets.white_sword_blank", "纯白剑胚");
+        add("item.godfall_trinkets.iron_white_sword", "锻铁白剑");
+        add("item.godfall_trinkets.diamond_white_blade", "碎钻白刃");
+        add("item.godfall_trinkets.shadow_sword", "碎神影剑");
+        add("item.godfall_trinkets.core_conquest_sword", "神核征伐剑");
+        add("item.godfall_trinkets.war_blade", "战伐神锋");
+        add("item.godfall_trinkets.wither_blade", "凋寂断刃");
+        add("item.godfall_trinkets.warden_sword", "幽守战剑");
+        add("item.godfall_trinkets.abyss_sword", "深渊征伐圣剑");
+        add("item.godfall_trinkets.end_dragon_sword", "终末龙征剑");
+
+// 长剑通用锻造提示
+        add("tooltip.sword_forge_progress", "锻造进度：%d/20");
+        add("tooltip.sword_locked", "§7进度未满，无法进行进阶锻造");
+        add("tooltip.sword_ready", "§a进度已满，搭配神陨锻造模板升级下一阶武器");
+
+// 各阶专属描述（清晰标注叠加+新增机制）
+        add("tooltip.sword.t0", "仅锻造载体，无战斗被动效果");
+        add("tooltip.sword.t1", "【新增】对亡灵生物伤害+25%，击杀获得额外经验");
+        add("tooltip.sword.t2", "【继承锻铁白剑】亡灵伤害提升至30%，击杀经验翻倍");
+        add("tooltip.sword.t3", "【继承前两阶】下界生物伤害+35%，攻击小型范围溅射");
+        add("tooltip.sword.t4", "【继承前三阶】全部普通怪物伤害+20%，溅射范围扩大");
+        add("tooltip.sword.t5", "【继承前四阶】普通怪物伤害+25%，命中吸取1.2生命值");
+        add("tooltip.sword.t6", "【继承前五阶】凋零/凋零骷髅伤害+45%，命中附加5秒凋零Ⅱ");
+        add("tooltip.sword.t7", "【继承前六阶】亮度＜4全伤害+40%，免疫失明、黑暗减速");
+        add("tooltip.sword.t8", "【继承前七阶】全Boss伤害+40%，吸血提升至2.0生命值");
+        add("tooltip.sword.t9_1", "【继承全部低阶效果】三大Boss、末影人、潜影贝伤害+60%，可与龙核之心叠加");
+        add("tooltip.sword.t9_2", "鞘翅飞行期间所有伤害额外增加30%");
+        // ===================== 神位碎片 物品名称 =====================
+        add("item.godfall_trinkets.shard_sky", "神位碎片——天穹");
+        add("item.godfall_trinkets.shard_sun", "神位碎片——烈阳");
+        add("item.godfall_trinkets.shard_life", "神位碎片——生命");
+        add("item.godfall_trinkets.shard_strength", "神位碎片——巨力");
+        add("item.godfall_trinkets.shard_fate", "神位碎片——命运");
+        add("item.godfall_trinkets.shard_wind", "神位碎片——疾风");
+        add("item.godfall_trinkets.shard_spirit", "神位碎片——灵韵");
+        add("item.godfall_trinkets.shard_barrier", "神位碎片——壁垒");
+        add("item.godfall_trinkets.shard_void", "神位碎片——虚空");
+        add("item.godfall_trinkets.shard_shadow", "神位碎片——影杀");
+        add("item.godfall_trinkets.shard_thunder", "神位碎片——御雷");
+        add("item.godfall_trinkets.shard_star", "神位碎片——星陨");
+        add("item.godfall_trinkets.shard_rune", "神位碎片——铭纹");
+
+// ===================== 神位碎片 效果Tooltip =====================
+        add("tooltip.godfall_trinkets.desc.shard_sky.line1", "解锁创造模式飞行，无视重力");
+        add("tooltip.godfall_trinkets.desc.shard_sun.line1", "攻击附加燃烧；免疫火焰、岩浆；白天持续缓慢回血");
+        add("tooltip.godfall_trinkets.desc.shard_life.line1", "常驻生命恢复X；致命伤自动复活，冷却300秒");
+        add("tooltip.godfall_trinkets.desc.shard_strength.line1", "近战基础伤害+50%；完全免疫击退");
+        add("tooltip.godfall_trinkets.desc.shard_fate.line1", "幸运值提升200%");
+        add("tooltip.godfall_trinkets.desc.shard_wind.line1", "二段跳+空中冲刺；免疫坠落；游泳攀爬速度翻倍");
+        add("tooltip.godfall_trinkets.desc.shard_spirit.line1", "正面药水时长翻倍、等级+1；饮用药水短时回血");
+        add("tooltip.godfall_trinkets.desc.shard_barrier.line1", "举盾不减速；格挡反弹全额伤害，格挡恢复1生命");
+        add("tooltip.godfall_trinkets.desc.shard_void.line1", "右键远程打开任意末影箱");
+        add("tooltip.godfall_trinkets.desc.shard_shadow.line1", "潜行完全隐身；背后攻击200%暴击");
+        add("tooltip.godfall_trinkets.desc.shard_thunder.line1", "攻击20%召唤无害落雷；免疫雷击；雨天全伤+40%");
+        add("tooltip.godfall_trinkets.desc.shard_star.line1", "弓弩三叉戟伤害+40%、蓄力速度+80%；免疫弹射击退");
+        add("tooltip.godfall_trinkets.desc.shard_rune.line1", "全身装备附魔等级+5；护甲附魔效果额外提升25%");
+        add("curios.modifiers.god_shard_slot", "佩戴破厄之核解锁全部13格");
+        add("curios.modifiers.broken_core_slot", "佩戴此饰品时: +13 神位碎片 +3 护符");
+        add("curios.modifiers.charm", " ");
+        add("curios.modifiers.ring", " ");
+        add("curios.modifiers.bracelet", " ");
+        add("curios.modifiers.curse_transfer", " ");
+        add("curios.modifiers.head", " ");
+        add("curios.modifiers.necklace", " ");
+        add("curios.modifiers.body", " ");
+        add("message.godfall_trinkets.breakthrough", "破厄之核突破至「%s」！");
+        add("message.godfall_trinkets.cant_sleep", "无眠诅咒使你无法入睡……");
+        add("tooltip.godfall_trinkets.hold_shift", "按住 Shift 查看八大诅咒与祝福详情");
+        add("tooltip.godfall_trinkets.curses_header", "▸ 八大诅咒 ◂");
+        add("tooltip.godfall_trinkets.blessings_header", "▸ 八大祝福 ◂");
+        add("tooltip.godfall_trinkets.tier", "境界：%s");
+        add("tooltip.godfall_trinkets.exp", "经验：%d / %d");
+        add("tooltip.godfall_trinkets.curse.1", "生命枯竭：无法自然回血，每秒流失 0.5 生命值");
+        add("tooltip.godfall_trinkets.curse.1_reversed", "生命涌动：自然回血 + 每秒恢复 0.6 生命值");
+        add("tooltip.godfall_trinkets.curse.2", "伤痛加深：受到的所有伤害提升 20%");
+        add("tooltip.godfall_trinkets.curse.2_reversed", "伤痛减免：受到的所有伤害降低 20%");
+        add("tooltip.godfall_trinkets.curse.3", "锋芒钝化：近战攻击伤害降低 30%");
+        add("tooltip.godfall_trinkets.curse.3_reversed", "锋芒毕露：近战攻击伤害提升 30%");
+        add("tooltip.godfall_trinkets.curse.4", "永饥之噬：饥饿消耗翻倍，归零时以经验替代掉血");
+        add("tooltip.godfall_trinkets.curse.4_reversed", "永不饥饿：饥饿消耗减半，归零时缓慢回复饱食度");
+        add("tooltip.godfall_trinkets.curse.5", "无眠诅咒：无法躺下睡觉跳过夜晚");
+        add("tooltip.godfall_trinkets.curse.5_reversed", "清醒祝福：可正常入睡，夜晚流逝速度 +200%");
+        add("tooltip.godfall_trinkets.curse.6", "重创烙印：每次受击额外扣除 30% 最大生命值");
+        add("tooltip.godfall_trinkets.curse.6_reversed", "坚韧烙印：单次受到伤害最高为生命值 30%");
+        add("tooltip.godfall_trinkets.curse.7", "身躯羸弱：最大生命值永久减少 4 点");
+        add("tooltip.godfall_trinkets.curse.7_reversed", "身躯强韧：最大生命值永久增加 4 点");
+        add("tooltip.godfall_trinkets.curse.8", "秽体易伤：中毒、凋零、虚弱负面效果一直持续");
+        add("tooltip.godfall_trinkets.curse.8_reversed", "秽体净化：中毒、凋零、虚弱负面效果持续时间减半");
+        add("tooltip.godfall_trinkets.blessing.1", "全属性攀升：全基础属性 +%s%%");
+        add("tooltip.godfall_trinkets.blessing.2", "深渊权能：解锁深渊装备使用权（9阶+30%%强度）");
+        add("tooltip.godfall_trinkets.blessing.3", "灵魂汲取：击杀回复生命与饱食（当前阶:%d）");
+        add("tooltip.godfall_trinkets.blessing.4", "暗影闪避：概率闪避攻击（当前阶:%d）");
+        add("tooltip.godfall_trinkets.blessing.5", "深渊视界：感知增强（当前阶:%d）");
+        add("tooltip.godfall_trinkets.blessing.6", "噬魂收割：经验加成+额外掉落深渊碎片（当前阶:%d）");
+        add("tooltip.godfall_trinkets.blessing.7", "灾厄共鸣：周围敌怪增伤叠层+伤害减免（当前阶:%d）");
+        add("tooltip.godfall_trinkets.blessing.8", "深渊护盾：吸收伤害护盾（当前阶:%d）");
+        // 18 item names
+        add("item.godfall_trinkets.tough_bone_amulet", "韧骨护符");
+        add("item.godfall_trinkets.sharp_edge_ring", "锐锋残戒");
+        add("item.godfall_trinkets.purifying_bracelet", "清秽腕饰");
+        add("item.godfall_trinkets.soul_drain_ring", "噬魂血戒");
+        add("item.godfall_trinkets.vital_amulet", "生纹护符");
+        add("item.godfall_trinkets.blunting_amulet", "挫刃护符");
+        add("item.godfall_trinkets.tough_heart_ring", "韧心指环");
+        add("item.godfall_trinkets.barrier_bracelet", "壁垒腕");
+        add("item.godfall_trinkets.death_defy_ring", "濒生戒");
+        add("item.godfall_trinkets.shock_amulet", "震斥护符");
+        add("item.godfall_trinkets.ember_bracelet", "烬肤镯");
+        add("item.godfall_trinkets.hunter_ring", "追猎戒");
+        add("item.godfall_trinkets.abyss_rune_ring", "渊纹铭刻戒");
+        add("item.godfall_trinkets.fertile_bracelet", "沃壤芽镯");
+        add("item.godfall_trinkets.forge_amulet", "熔渊锻符");
+        add("item.godfall_trinkets.deep_rock_ring", "深岩寻矿戒");
+        add("item.godfall_trinkets.treasure_amulet", "拾珍护符");
+        add("item.godfall_trinkets.prosperity_bracelet", "繁生腕镯");
+        // 18 description tooltips
+        add("tooltip.godfall_trinkets.desc.tough_bone_amulet.line1", "+3 最大生命");
+        add("tooltip.godfall_trinkets.desc.tough_bone_amulet.line2", "受到所有伤害 -12%");
+        add("tooltip.godfall_trinkets.desc.sharp_edge_ring.line1", "全伤害 +12%");
+        add("tooltip.godfall_trinkets.desc.purifying_bracelet.line1", "20 秒自动清除一层负面效果");
+        add("tooltip.godfall_trinkets.desc.soul_drain_ring.line1", "攻击命中偷取 15% 伤害生命值");
+        add("tooltip.godfall_trinkets.desc.soul_drain_ring.line2", "击杀回复 3 生命值");
+        add("tooltip.godfall_trinkets.desc.vital_amulet.line1", "常驻 3/秒 生命回复");
+        add("tooltip.godfall_trinkets.desc.vital_amulet.line2", "受击立刻回复 2 生命值");
+        add("tooltip.godfall_trinkets.desc.blunting_amulet.line1", "受到所有伤害 -15%");
+        add("tooltip.godfall_trinkets.desc.blunting_amulet.line2", "全伤害 +8%");
+        add("tooltip.godfall_trinkets.desc.tough_heart_ring.line1", "+4 最大生命值");
+        add("tooltip.godfall_trinkets.desc.tough_heart_ring.line2", "血量低于 30% 时额外减伤 20%");
+        add("tooltip.godfall_trinkets.desc.barrier_bracelet.line1", "举盾免疫投射物并反弹 30% 伤害");
+        add("tooltip.godfall_trinkets.desc.barrier_bracelet.line2", "爆炸/范围群伤减免 22%");
+        add("tooltip.godfall_trinkets.desc.barrier_bracelet.line3", "举盾每 2 秒回复 0.8 生命值");
+        add("tooltip.godfall_trinkets.desc.death_defy_ring.line1", "血量低于 35%：减伤 28% + 吸血 22%");
+        add("tooltip.godfall_trinkets.desc.death_defy_ring.line2", "濒死触发 3 秒无敌（45 秒冷却）");
+        add("tooltip.godfall_trinkets.desc.death_defy_ring.line3", "低血击杀额外回复 4 生命值");
+        add("tooltip.godfall_trinkets.desc.shock_amulet.line1", "近战命中施加缓慢（30秒）");
+        add("tooltip.godfall_trinkets.desc.shock_amulet.line2", "抗击退 +18%");
+        add("tooltip.godfall_trinkets.desc.shock_amulet.line3", "周围每只敌怪 +1/秒 回血（上限6）");
+        add("tooltip.godfall_trinkets.desc.ember_bracelet.line1", "完全免疫火焰伤害");
+        add("tooltip.godfall_trinkets.desc.ember_bracelet.line2", "中毒、凋零类持续伤害降低 50%");
+        add("tooltip.godfall_trinkets.desc.hunter_ring.line1", "对血量高于 50% 怪物全伤害 +16%");
+        add("tooltip.godfall_trinkets.desc.hunter_ring.line2", "击杀瞬间回复 3.5 生命值");
+        add("tooltip.godfall_trinkets.desc.abyss_rune_ring.line1", "附魔消耗经验 -20%");
+        add("tooltip.godfall_trinkets.desc.abyss_rune_ring.line2", "附魔词条品质小幅提升");
+        add("tooltip.godfall_trinkets.desc.abyss_rune_ring.line3", "经验获取 +12%");
+        add("tooltip.godfall_trinkets.desc.fertile_bracelet.line1", "8 格内作物生长 +25%");
+        add("tooltip.godfall_trinkets.desc.fertile_bracelet.line2", "30% 概率作物双倍掉落");
+        // 删掉原来带\\\\n的单行，拆成三条独立key，无任何转义符号
+        add("tooltip.godfall_trinkets.desc.forge_amulet.line1", "熔炉烧制速度 +30% 燃料消耗 -15%");
+        add("tooltip.godfall_trinkets.desc.forge_amulet.line2", "铁砧修复经验 -25%");
+        add("tooltip.godfall_trinkets.desc.forge_amulet.line3", "工具耐久损耗 -20%");
+        add("tooltip.godfall_trinkets.desc.deep_rock_ring.line1", "挖掘速度 +15%");
+        add("tooltip.godfall_trinkets.desc.deep_rock_ring.line2", "挖矿 25% 概率双倍原矿");
+        add("tooltip.godfall_trinkets.desc.deep_rock_ring.line3", "免疫挖掘疲劳");
+        add("tooltip.godfall_trinkets.desc.treasure_amulet.line1", "生物基础掉落 +20%,稀有掉落 +10%");
+        add("tooltip.godfall_trinkets.desc.treasure_amulet.line2", "宝箱 35% 多一件战利品");
+        add("tooltip.godfall_trinkets.desc.prosperity_bracelet.line1", "10 格内动物幼崽生长 +30%");
+        add("tooltip.godfall_trinkets.desc.prosperity_bracelet.line2", "繁殖冷却 -25%");
+        add("tooltip.godfall_trinkets.desc.prosperity_bracelet.line3", "宰杀 20% 双倍肉/皮革");
+        add("tooltip.godfall_trinkets.require_core", "§c装备破厄之核后才可佩戴");
+        // 咒厄转移坠
+        add("tooltip.godfall_trinkets.absorbed_curses", "▸ 已吸收诅咒 ◂");
+        add("tooltip.godfall_trinkets.curse_durability", "耐久：%d / %d");
+        add("message.godfall_trinkets.curse_return", "§c咒厄转移坠已碎裂！诅咒归还原主……§r");
+        add("msg.godfall.slot.already_unlock", "你已经解锁过咒厄槽位了。");
+        add("msg.godfall.slot.unlock_success", "咒厄槽位已解锁！可佩戴咒厄转移坠。");
+        add("curse.godfall_trinkets.agony", "生命枯竭");
+        add("curse.godfall_trinkets.deep_wound", "伤痛加深");
+        add("curse.godfall_trinkets.blunt_edge", "锋芒钝化");
+        add("curse.godfall_trinkets.hunger_curse", "永饥之噬");
+        add("curse.godfall_trinkets.sleepless", "无眠诅咒");
+        add("curse.godfall_trinkets.scarred", "重创烙印");
+        add("curse.godfall_trinkets.weak_body", "身躯羸弱");
+        add("curse.godfall_trinkets.foul_body", "秽体易伤");
+        // 神陨合金锻造模板提示文本
+        add("upgrade.god_alloy", "神陨合金升级");
+        add("tooltip.god_template.apply", "盔甲：钻石全套,下界合金套,征伐战斗套");
+        add("tooltip.god_template.material", "材料：神陨合金锭，征伐战斗锭");
+        add("tooltip.god_template.desc", "将钻石盔甲锻造成诅咒耐受套，将下界合金盔甲锻造成征伐战斗套，将征伐战斗套锻造成征伐战斗套");
+        // 神格
+        add("item.godfall_trinkets.god_core", "神格");
+        add("item.godfall_trinkets.god_evolution_stone", "神格进化石");
+        add("tooltip.godfall_trinkets.hold_ctrl", "按住 Ctrl 查看神格终局增幅");
+        add("message.godfall_trinkets.evolve_success", "§6破厄之核已进化为神格！§r");
+        add("message.godfall_trinkets.no_core_found", "§c未在饰品栏中找到破厄之核§r");
+        add("message.godfall_trinkets.already_god", "§c破厄之核已是神格，无需重复进化§r");
+        add("tooltip.godfall_trinkets.godcore_header", "▸ 神格终局权能 ◂");
+        add("tooltip.godfall_trinkets.godcore.1", "全属性增幅：全属性额外提升 35%");
+        add("tooltip.godfall_trinkets.godcore.2", "碎片共鸣：全部神位碎片效果强化 50%");
+        add("tooltip.godfall_trinkets.godcore.3", "永恒战意：近战/远程总伤害 +20%，承受伤害 -25%");
+        add("tooltip.godfall_trinkets.godcore.4", "元素免疫：坠落/火焰/岩浆/仙人掌/溺水/雷击/爆炸/魔法等全伤害免疫");
+        add("tooltip.godfall_trinkets.godcore.5", "神体护佑：单次承受伤害上限锁定最大生命值 30%");
+        add("tooltip.godfall_trinkets.godcore.6", "神速回复：受伤无敌帧延长至 30 tick");
+        add("tooltip.godfall_trinkets.godcore.7", "天穹主宰：创造飞行移速大幅提升，飞行时伤害 +30%");
+        add("tooltip.godfall_trinkets.godcore.8", "破甲真伤：攻击无视护甲/韧性/抗性/Boss伤害上限");
+        // 按键绑定
+        add("key.category.godfall_trinkets", "登神残饰");
+        add("key.godfall_trinkets.open_ender_chest", "打开末影箱");
+    }
+}

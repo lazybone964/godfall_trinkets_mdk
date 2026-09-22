@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "godfall_trinkets:curse_transfer_blank"
+    },
+    {
+      "item": "godfall_trinkets:sharp_edge_stone"
+    },
+    {
+      "item": "godfall_trinkets:godfragment"
+    },
+    {
+      "item": "godfall_trinkets:godfragment"
+    },
+    {
+      "item": "godfall_trinkets:godfragment"
+    }
+  ],
+  "result": {
+    "item": "godfall_trinkets:curse_transfer_trinket"
+  }
+}
