@@ -4,6 +4,7 @@ import com.lazybones.godfalltrinkets.config.GodfallConfig;
 import com.lazybones.godfalltrinkets.item.ModCreativeTabs;
 import com.lazybones.godfalltrinkets.item.ModItems;
 import com.lazybones.godfalltrinkets.item.custom.BrokenCoreItem;
+import com.lazybones.godfalltrinkets.loot.ShardLootModifier;
 import com.lazybones.godfalltrinkets.loot.TrinketLootModifier;
 import com.lazybones.godfalltrinkets.network.ModNetwork;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
@@ -37,6 +38,9 @@ public class GodfallTrinkets {
 
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> TRINKET_LOOT =
             LOOT_MODIFIERS.register("trinket_chest_loot", () -> TrinketLootModifier.CODEC);
+
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> SHARD_LOOT =
+            LOOT_MODIFIERS.register("shard_chest_loot", () -> ShardLootModifier.CODEC);
 
     public GodfallTrinkets(FMLJavaModLoadingContext context) {
         IEventBus bus = context.getModEventBus();

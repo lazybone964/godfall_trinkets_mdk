@@ -2,6 +2,15 @@
   "replace": false,
   "entries": [
     "godfall_trinkets:treasure_amulet_chest",
-    "godfall_trinkets:nether_chest_loot"
+    "godfall_trinkets:nether_chest_loot",
+    "godfall_trinkets:shard_ancient_city",
+    "godfall_trinkets:shard_village",
+    "godfall_trinkets:shard_stronghold_library",
+    "godfall_trinkets:shard_nether_bridge",
+    "godfall_trinkets:shard_dungeon",
+    "godfall_trinkets:shard_end_city",
+    "godfall_trinkets:shard_pillager_outpost",
+    "godfall_trinkets:shard_stronghold",
+    "godfall_trinkets:shard_bastion_treasure"
   ]
 }
