@@ -1,0 +1,15 @@
+{
+  "type": "godfall_trinkets:shard_chest_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {"condition": "forge:loot_table_id", "loot_table_id": "minecraft:chests/ancient_city"}
+      ]
+    }
+  ],
+  "shards": [
+    { "item": "godfall_trinkets:shard_life", "chance": 0.2 },
+    { "item": "godfall_trinkets:shard_shadow", "chance": 0.2 }
+  ]
+}

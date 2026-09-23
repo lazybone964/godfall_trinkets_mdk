@@ -1,0 +1,16 @@
+{
+  "type": "godfall_trinkets:shard_chest_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {"condition": "forge:loot_table_id", "loot_table_id": "minecraft:chests/pillager_outpost"}
+      ]
+    }
+  ],
+  "shards": [
+    { "item": "godfall_trinkets:shard_wind", "chance": 0.3 },
+    { "item": "godfall_trinkets:shard_spirit", "chance": 0.3 },
+    { "item": "godfall_trinkets:shard_thunder", "chance": 0.3 }
+  ]
+}

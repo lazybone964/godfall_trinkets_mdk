@@ -1,0 +1,14 @@
+{
+  "type": "godfall_trinkets:shard_chest_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {"condition": "forge:loot_table_id", "loot_table_id": "minecraft:chests/bastion_treasure"}
+      ]
+    }
+  ],
+  "shards": [
+    { "item": "godfall_trinkets:shard_strength", "chance": 0.3 }
+  ]
+}
