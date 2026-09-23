@@ -2,6 +2,9 @@ package com.lazybones.godfalltrinkets.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /** 登神残饰 - 七大模块全量配置文件 */
 public class GodfallConfig {
 
@@ -40,6 +43,10 @@ public class GodfallConfig {
     public static final ForgeConfigSpec.DoubleValue SHARD_SHADOW_BACKSTAB_MULT;
     public static final ForgeConfigSpec.IntValue SHARD_RUNE_ENCHANT_LEVEL_BONUS;
     public static final ForgeConfigSpec.DoubleValue SHARD_SUN_DAY_REGEN_SPEED;
+
+    // 碎片掉落：击杀怪物列表 + 掉落概率列表（索引与 SHARD_ENABLE 对应）
+    public static final List<ForgeConfigSpec.ConfigValue<List<? extends String>>> SHARD_DROP_MOBS = new ArrayList<>();
+    public static final List<ForgeConfigSpec.ConfigValue<List<? extends Double>>> SHARD_DROP_CHANCES = new ArrayList<>();
 
     // ==================== 模块三：九阶成长长剑 ====================
 
@@ -131,6 +138,49 @@ public class GodfallConfig {
             String n = shardNames[i];
             SHARD_ENABLE[i] = b.comment("是否启用「" + n + "」碎片功能").define("shard_" + n + "_enable", true);
             SHARD_MOD[i] = b.comment("「" + n + "」碎片效果倍率").defineInRange("shard_" + n + "_mod", shardDefaults[i], 0.0, 100.0);
+        }
+
+        // 碎片掉落：击杀怪物 + 概率（怪物注册名支持 :powered=带电苦力怕, :captain=掠夺者队长）
+        String[][] shardMobDefaults = {
+                {"minecraft:ender_dragon"},
+                {"minecraft:blaze", "minecraft:magma_cube"},
+                {"minecraft:warden"},
+                {"minecraft:piglin_brute"},
+                {},
+                {"minecraft:goat"},
+                {"minecraft:witch"},
+                {"minecraft:iron_golem"},
+                {"minecraft:shulker"},
+                {"minecraft:warden"},
+                {"minecraft:creeper:powered", "minecraft:pillager:captain"},
+                {"minecraft:skeleton", "minecraft:shulker"},
+                {}
+        };
+        double[][] shardChanceDefaults = {
+                {1.0},
+                {0.12, 0.08},
+                {0.04},
+                {0.10},
+                {},
+                {0.07},
+                {0.09},
+                {0.11},
+                {0.09},
+                {0.05},
+                {0.16, 0.10},
+                {0.08, 0.13},
+                {}
+        };
+        for (int i = 0; i < 13; i++) {
+            String n = shardNames[i];
+            List<String> mobList = new ArrayList<>();
+            for (String m : shardMobDefaults[i]) mobList.add(m);
+            List<Double> chanceList = new ArrayList<>();
+            for (double c : shardChanceDefaults[i]) chanceList.add(c);
+            SHARD_DROP_MOBS.add(b.comment("「" + n + "」碎片击杀掉落怪物（怪物注册名，:powered=带电苦力怕，:captain=掠夺者队长）")
+                    .defineListAllowEmpty("shard_" + n + "_drop_mobs", mobList, o -> o instanceof String));
+            SHARD_DROP_CHANCES.add(b.comment("「" + n + "」碎片掉落概率（与上方怪物一一对应）")
+                    .defineListAllowEmpty("shard_" + n + "_drop_chances", chanceList, o -> o instanceof Double));
         }
 
         SHARD_LIFE_REVIVE_CD_SECONDS = b.comment("生命碎片复活冷却秒数").defineInRange("shard_life_revive_cd_seconds", 60, 1, 86400);
