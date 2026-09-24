@@ -1,0 +1,17 @@
+{
+  "parent":"godfall_trinkets:thirteen_return",
+  "display": {
+    "icon": {"item":"godfall_trinkets:god_core"},
+    "title":{"translate":"advancement.godfall_trinkets.godhood_awaken.title"},
+    "description":{"translate":"advancement.godfall_trinkets.godhood_awaken.desc"},
+    "frame":"challenge",
+    "show_toast":true,
+    "announce_to_chat":true
+  },
+  "criteria":{
+    "dummy": {
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[["dummy"]]
+}

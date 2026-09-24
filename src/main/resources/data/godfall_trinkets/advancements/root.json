@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item":"godfall_trinkets:broken_core"
+    },
+    "title":{"translate":"advancement.godfall_trinkets.catastrophe_begin.title"},
+    "description":{"translate":"advancement.godfall_trinkets.catastrophe_begin.desc"},
+    "frame":"challenge",
+    "background":"minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast":true,
+    "announce_to_chat":true
+  },
+  "criteria":{
+    "equip_core":{
+      "trigger":"curios:equip_curio",
+      "conditions":{
+        "items":[{"items":["godfall_trinkets:broken_core"]}]
+      }
+    }
+  },
+  "requirements":[["equip_core"]]
+}

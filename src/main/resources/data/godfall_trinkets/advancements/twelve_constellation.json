@@ -1,0 +1,17 @@
+{
+  "parent":"godfall_trinkets:shard_first",
+  "display": {
+    "icon": {"item":"godfall_trinkets:godfragment"},
+    "title":{"translate":"advancement.godfall_trinkets.twelve_constellation.title"},
+    "description":{"translate":"advancement.godfall_trinkets.twelve_constellation.desc"},
+    "frame":"goal",
+    "show_toast":true,
+    "announce_to_chat":true
+  },
+  "criteria":{
+    "dummy": {
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[["dummy"]]
+}

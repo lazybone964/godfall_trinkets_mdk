@@ -1,30 +1,30 @@
-[229月2026 20:53:17.546] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, godfall_trinkets, --all, --output, D:\ideaProjects\godfall_trinkets_mdk\src\generated\resources, --existing, D:\ideaProjects\godfall_trinkets_mdk\src\main\resources]
-[229月2026 20:53:17.560] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[229月2026 20:53:17.698] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[229月2026 20:53:17.769] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[229月2026 20:53:18.282] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[229月2026 20:53:18.289] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[229月2026 20:53:18.293] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[229月2026 20:53:18.297] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[229月2026 20:53:18.570] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[229月2026 20:53:20.756] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[229月2026 20:53:20.757] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\caches\forge_gradle\assets, --assetIndex, 5, --mod, godfall_trinkets, --all, --output, D:\ideaProjects\godfall_trinkets_mdk\src\generated\resources, --existing, D:\ideaProjects\godfall_trinkets_mdk\src\main\resources]
-[229月2026 20:53:21.974] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [godfall_trinkets]
-[229月2026 20:53:31.620] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[229月2026 20:53:31.623] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
-[229月2026 20:53:32.603] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[229月2026 20:53:32.604] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[229月2026 20:53:33.374] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Curios for godfall_trinkets
-[229月2026 20:53:33.425] [main/INFO] [net.minecraft.data.DataGenerator/]: Curios for godfall_trinkets finished after 50 ms
-[229月2026 20:53:33.425] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: godfall_trinkets
-[229月2026 20:53:33.531] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: godfall_trinkets finished after 105 ms
-[229月2026 20:53:33.531] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id godfall_trinkets
-[229月2026 20:53:33.553] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id godfall_trinkets finished after 21 ms
-[229月2026 20:53:33.553] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
-[229月2026 20:53:33.559] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 5 ms
-[229月2026 20:53:33.559] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: zh_cn
-[229月2026 20:53:33.565] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: zh_cn finished after 5 ms
-[229月2026 20:53:33.565] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[229月2026 20:53:33.738] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 173 ms
-[229月2026 20:53:33.738] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 365 ms
-[229月2026 20:53:33.766] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 226, old count: 226, new count: 227, removed stale: 0, written: 2
+[249月2026 21:19:26.717] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, godfall_trinkets, --all, --output, D:\ideaProjects\godfall_trinkets_mdk\src\generated\resources, --existing, D:\ideaProjects\godfall_trinkets_mdk\src\main\resources]
+[249月2026 21:19:26.732] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[249月2026 21:19:26.889] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[249月2026 21:19:26.965] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[249月2026 21:19:27.467] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[249月2026 21:19:27.472] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[249月2026 21:19:27.478] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[249月2026 21:19:27.484] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[249月2026 21:19:27.637] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[249月2026 21:19:29.971] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[249月2026 21:19:29.973] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\caches\forge_gradle\assets, --assetIndex, 5, --mod, godfall_trinkets, --all, --output, D:\ideaProjects\godfall_trinkets_mdk\src\generated\resources, --existing, D:\ideaProjects\godfall_trinkets_mdk\src\main\resources]
+[249月2026 21:19:31.093] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [godfall_trinkets]
+[249月2026 21:19:40.950] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[249月2026 21:19:40.952] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[249月2026 21:19:41.862] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[249月2026 21:19:41.864] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[249月2026 21:19:42.310] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Curios for godfall_trinkets
+[249月2026 21:19:42.541] [main/INFO] [net.minecraft.data.DataGenerator/]: Curios for godfall_trinkets finished after 231 ms
+[249月2026 21:19:42.542] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: godfall_trinkets
+[249月2026 21:19:42.622] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: godfall_trinkets finished after 79 ms
+[249月2026 21:19:42.622] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id godfall_trinkets
+[249月2026 21:19:42.655] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id godfall_trinkets finished after 32 ms
+[249月2026 21:19:42.655] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[249月2026 21:19:42.672] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 15 ms
+[249月2026 21:19:42.673] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: zh_cn
+[249月2026 21:19:42.689] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: zh_cn finished after 14 ms
+[249月2026 21:19:42.690] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[249月2026 21:19:42.818] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 128 ms
+[249月2026 21:19:42.818] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 510 ms
+[249月2026 21:19:42.882] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 226, old count: 226, new count: 227, removed stale: 0, written: 2

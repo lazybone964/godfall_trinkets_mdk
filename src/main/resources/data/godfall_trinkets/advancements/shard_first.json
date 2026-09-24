@@ -1,0 +1,34 @@
+{
+  "parent":"godfall_trinkets:root",
+  "display": {
+    "icon": {"item":"godfall_trinkets:shard_sky"},
+    "title":{"translate":"advancement.godfall_trinkets.first_shard.title"},
+    "description":{"translate":"advancement.godfall_trinkets.first_shard.desc"},
+    "frame":"goal",
+    "show_toast":true,
+    "announce_to_chat":true
+  },
+  "criteria":{
+    "get_any_shard":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{
+        "items":[
+          {"items":["godfall_trinkets:shard_sky"]},
+          {"items":["godfall_trinkets:shard_sun"]},
+          {"items":["godfall_trinkets:shard_life"]},
+          {"items":["godfall_trinkets:shard_strength"]},
+          {"items":["godfall_trinkets:shard_fate"]},
+          {"items":["godfall_trinkets:shard_wind"]},
+          {"items":["godfall_trinkets:shard_spirit"]},
+          {"items":["godfall_trinkets:shard_barrier"]},
+          {"items":["godfall_trinkets:shard_void"]},
+          {"items":["godfall_trinkets:shard_shadow"]},
+          {"items":["godfall_trinkets:shard_thunder"]},
+          {"items":["godfall_trinkets:shard_star"]},
+          {"items":["godfall_trinkets:shard_rune"]}
+        ]
+      }
+    }
+  },
+  "requirements":[["get_any_shard"]]
+}

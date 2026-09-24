@@ -328,5 +328,82 @@ public class ModZhCnLangProvider extends LanguageProvider {
         // 按键绑定
         add("key.category.godfall_trinkets", "登神残饰");
         add("key.godfall_trinkets.open_ender_chest", "打开末影箱");
+        // ==================== 【进度/成就 Advancement 中文翻译】====================
+// 🔴 Challenge 紫色BGM成就
+        add("advancement.godfall_trinkets.catastrophe_begin.title", "灾厄的开端");
+        add("advancement.godfall_trinkets.catastrophe_begin.desc", "佩戴上破厄之核，正式踏上登神的旅途。");
+
+        add("advancement.godfall_trinkets.godhood_awaken.title", "神格觉醒");
+        add("advancement.godfall_trinkets.godhood_awaken.desc", "破厄之核进化为神核，解锁全部终局神格力量。");
+
+        add("advancement.godfall_trinkets.dragon_forge_blade.title", "龙征铸锋");
+        add("advancement.godfall_trinkets.dragon_forge_blade.desc", "锻造出模组最强武器——终末龙征剑。");
+
+// 🟡 Goal 黄色圆角里程碑
+        add("advancement.godfall_trinkets.first_shard.title", "碎片初获");
+        add("advancement.godfall_trinkets.first_shard.desc", "获得第一枚神位碎片，窥见神之力量。");
+
+        add("advancement.godfall_trinkets.twelve_constellation.title", "十二星罗");
+        add("advancement.godfall_trinkets.twelve_constellation.desc", "集齐除天穹碎片以外全部12枚神位碎片。");
+
+        add("advancement.godfall_trinkets.thirteen_return.title", "十三归位");
+        add("advancement.godfall_trinkets.thirteen_return.desc", "集齐全部13枚神位碎片。");
+
+        add("advancement.godfall_trinkets.tier9_reverse.title", "境界逆转");
+        add("advancement.godfall_trinkets.tier9_reverse.desc", "破厄之核抵达9阶，全部诅咒发生反转。");
+
+// 🟩 Task普通成就 ——13枚神位碎片
+        add("advancement.godfall_trinkets.shard_sky.title", "天穹回响");
+        add("advancement.godfall_trinkets.shard_sky.desc", "获得神位碎片——天穹。");
+
+        add("advancement.godfall_trinkets.shard_sun.title", "烈阳焚野");
+        add("advancement.godfall_trinkets.shard_sun.desc", "获得神位碎片——烈阳。");
+
+        add("advancement.godfall_trinkets.shard_life.title", "生命涌泉");
+        add("advancement.godfall_trinkets.shard_life.desc", "获得神位碎片——生命。");
+
+        add("advancement.godfall_trinkets.shard_strength.title", "巨力撼世");
+        add("advancement.godfall_trinkets.shard_strength.desc", "获得神位碎片——巨力。");
+
+        add("advancement.godfall_trinkets.shard_fate.title", "命运织罗");
+        add("advancement.godfall_trinkets.shard_fate.desc", "获得神位碎片——命运。");
+
+        add("advancement.godfall_trinkets.shard_wind.title", "疾风逐空");
+        add("advancement.godfall_trinkets.shard_wind.desc", "获得神位碎片——疾风。");
+
+        add("advancement.godfall_trinkets.shard_spirit.title", "灵韵沐身");
+        add("advancement.godfall_trinkets.shard_spirit.desc", "获得神位碎片——灵韵。");
+
+        add("advancement.godfall_trinkets.shard_barrier.title", "壁垒不移");
+        add("advancement.godfall_trinkets.shard_barrier.desc", "获得神位碎片——壁垒。");
+
+        add("advancement.godfall_trinkets.shard_void.title", "虚空窥秘");
+        add("advancement.godfall_trinkets.shard_void.desc", "获得神位碎片——虚空。");
+
+        add("advancement.godfall_trinkets.shard_shadow.title", "影杀匿踪");
+        add("advancement.godfall_trinkets.shard_shadow.desc", "获得神位碎片——影杀。");
+
+        add("advancement.godfall_trinkets.shard_thunder.title", "御雷惊世");
+        add("advancement.godfall_trinkets.shard_thunder.desc", "获得神位碎片——御雷。");
+
+        add("advancement.godfall_trinkets.shard_star.title", "星陨贯甲");
+        add("advancement.godfall_trinkets.shard_star.desc", "获得神位碎片——星陨。");
+
+        add("advancement.godfall_trinkets.shard_rune.title", "铭纹焕彩");
+        add("advancement.godfall_trinkets.shard_rune.desc", "获得神位碎片——铭纹。");
+
+// 🟩 Task普通成就 ——长剑系列
+        add("advancement.godfall_trinkets.sword_blank_start.title", "剑胚启铸");
+        add("advancement.godfall_trinkets.sword_blank_start.desc", "拿到纯白剑胚，开启漫长的锻造之路。");
+
+        add("advancement.godfall_trinkets.sword_mid_forge.title", "锻刃前行");
+        add("advancement.godfall_trinkets.sword_mid_forge.desc", "将长剑锻造至中期阶段。");
+
+// 🕵️ 隐藏成就 hidden:true
+        add("advancement.godfall_trinkets.hardship_temper.title", "苦厄磨砺");
+        add("advancement.godfall_trinkets.hardship_temper.desc", "破厄之核升级到境界5【寂灭】。");
+
+        add("advancement.godfall_trinkets.chest_find_shard.title", "宝匣寻神");
+        add("advancement.godfall_trinkets.chest_find_shard.desc", "从结构宝箱之中获得一枚神位碎片。");
     }
 }

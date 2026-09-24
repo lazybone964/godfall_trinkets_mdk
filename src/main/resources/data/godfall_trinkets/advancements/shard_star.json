@@ -1,0 +1,18 @@
+{
+  "parent":"godfall_trinkets:shard_first",
+  "display": {
+    "icon": {"item":"godfall_trinkets:shard_star"},
+    "title":{"translate":"advancement.godfall_trinkets.shard_star.title"},
+    "description":{"translate":"advancement.godfall_trinkets.shard_star.desc"},
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":false
+  },
+  "criteria":{
+    "get":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{"items":[{"items":["godfall_trinkets:shard_star"]}]}
+    }
+  },
+  "requirements":[["get"]]
+}

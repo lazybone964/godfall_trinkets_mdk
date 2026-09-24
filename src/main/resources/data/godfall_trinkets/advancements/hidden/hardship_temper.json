@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"item":"godfall_trinkets:broken_core"},
+    "title":{"translate":"advancement.godfall_trinkets.hardship_temper.title"},
+    "description":{"translate":"advancement.godfall_trinkets.hardship_temper.desc"},
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":false,
+    "hidden":true
+  },
+  "criteria":{
+    "dummy": {
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[["dummy"]]
+}

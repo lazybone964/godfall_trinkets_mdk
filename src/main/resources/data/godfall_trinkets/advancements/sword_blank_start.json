@@ -1,0 +1,18 @@
+{
+  "parent":"godfall_trinkets:root",
+  "display": {
+    "icon": {"item":"godfall_trinkets:white_sword_blank"},
+    "title":{"translate":"advancement.godfall_trinkets.sword_blank_start.title"},
+    "description":{"translate":"advancement.godfall_trinkets.sword_blank_start.desc"},
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":false
+  },
+  "criteria":{
+    "get":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{"items":[{"items":["godfall_trinkets:white_sword_blank"]}]}
+    }
+  },
+  "requirements":[["get"]]
+}

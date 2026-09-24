@@ -1,0 +1,18 @@
+{
+  "parent":"godfall_trinkets:sword_mid_forge",
+  "display": {
+    "icon": {"item":"godfall_trinkets:end_dragon_sword"},
+    "title":{"translate":"advancement.godfall_trinkets.dragon_forge_blade.title"},
+    "description":{"translate":"advancement.godfall_trinkets.dragon_forge_blade.desc"},
+    "frame":"challenge",
+    "show_toast":true,
+    "announce_to_chat":true
+  },
+  "criteria":{
+    "get":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{"items":[{"items":["godfall_trinkets:end_dragon_sword"]}]}
+    }
+  },
+  "requirements":[["get"]]
+}

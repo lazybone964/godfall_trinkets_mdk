@@ -1,0 +1,18 @@
+{
+  "parent":"godfall_trinkets:shard_first",
+  "display": {
+    "icon": {"item":"godfall_trinkets:shard_spirit"},
+    "title":{"translate":"advancement.godfall_trinkets.shard_spirit.title"},
+    "description":{"translate":"advancement.godfall_trinkets.shard_spirit.desc"},
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":false
+  },
+  "criteria":{
+    "get":{
+      "trigger":"minecraft:inventory_changed",
+      "conditions":{"items":[{"items":["godfall_trinkets:shard_spirit"]}]}
+    }
+  },
+  "requirements":[["get"]]
+}

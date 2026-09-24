@@ -1,0 +1,17 @@
+{
+  "parent":"godfall_trinkets:sword_blank_start",
+  "display": {
+    "icon": {"item":"godfall_trinkets:shadow_sword"},
+    "title":{"translate":"advancement.godfall_trinkets.sword_mid_forge.title"},
+    "description":{"translate":"advancement.godfall_trinkets.sword_mid_forge.desc"},
+    "frame":"task",
+    "show_toast":true,
+    "announce_to_chat":false
+  },
+  "criteria":{
+    "dummy": {
+      "trigger":"minecraft:impossible"
+    }
+  },
+  "requirements":[["dummy"]]
+}

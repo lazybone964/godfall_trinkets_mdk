@@ -144,5 +144,82 @@ public class ModEnUsLangProvider extends LanguageProvider {
         // Keybindings
         add("key.category.godfall_trinkets", "Godfall Trinkets");
         add("key.godfall_trinkets.open_ender_chest", "Open Ender Chest");
+        // ==================== Advancement / Achievements English ====================
+// Challenge purple
+        add("advancement.godfall_trinkets.catastrophe_begin.title", "Beginning of Calamity");
+        add("advancement.godfall_trinkets.catastrophe_begin.desc", "Equip the Broken‑Destiny Core and start your ascension journey.");
+
+        add("advancement.godfall_trinkets.godhood_awaken.title", "Divine Awakening");
+        add("advancement.godfall_trinkets.godhood_awaken.desc", "Evolve Broken‑Destiny Core into God Core, unlock full end‑game power.");
+
+        add("advancement.godfall_trinkets.dragon_forge_blade.title", "Dragon‑Forged Edge");
+        add("advancement.godfall_trinkets.dragon_forge_blade.desc", "Forge the ultimate weapon: Dragon‑Conquering Sword.");
+
+// Goal
+        add("advancement.godfall_trinkets.first_shard.title", "First Divine Shard");
+        add("advancement.godfall_trinkets.first_shard.desc", "Obtain your first Divine Shard and glimpse divine power.");
+
+        add("advancement.godfall_trinkets.twelve_constellation.title", "Twelve Constellations");
+        add("advancement.godfall_trinkets.twelve_constellation.desc", "Collect 12 Divine Shards excluding the Aether Shard.");
+
+        add("advancement.godfall_trinkets.thirteen_return.title", "Thirteen Divine Parts");
+        add("advancement.godfall_trinkets.thirteen_return.desc", "Gather all thirteen Divine Shards.");
+
+        add("advancement.godfall_trinkets.tier9_reverse.title", "Curse Reversal");
+        add("advancement.godfall_trinkets.tier9_reverse.desc", "Reach tier 9 on Broken‑Destiny Core and reverse all curses.");
+
+// Task 13 shards
+        add("advancement.godfall_trinkets.shard_sky.title", "Aether Echo");
+        add("advancement.godfall_trinkets.shard_sky.desc", "Obtain Divine Shard — Aether.");
+
+        add("advancement.godfall_trinkets.shard_sun.title", "Scorching Sun");
+        add("advancement.godfall_trinkets.shard_sun.desc", "Obtain Divine Shard — Sol.");
+
+        add("advancement.godfall_trinkets.shard_life.title", "Spring of Life");
+        add("advancement.godfall_trinkets.shard_life.desc", "Obtain Divine Shard — Vitalis.");
+
+        add("advancement.godfall_trinkets.shard_strength.title", "Might of Titan");
+        add("advancement.godfall_trinkets.shard_strength.desc", "Obtain Divine Shard — Might.");
+
+        add("advancement.godfall_trinkets.shard_fate.title", "Weaver of Destiny");
+        add("advancement.godfall_trinkets.shard_fate.desc", "Obtain Divine Shard — Destiny.");
+
+        add("advancement.godfall_trinkets.shard_wind.title", "Swift Gale");
+        add("advancement.godfall_trinkets.shard_wind.desc", "Obtain Divine Shard — Tempest.");
+
+        add("advancement.godfall_trinkets.shard_spirit.title", "Blessed Spirit");
+        add("advancement.godfall_trinkets.shard_spirit.desc", "Obtain Divine Shard — Spirit.");
+
+        add("advancement.godfall_trinkets.shard_barrier.title", "Unbreakable Bulwark");
+        add("advancement.godfall_trinkets.shard_barrier.desc", "Obtain Divine Shard — Aegis.");
+
+        add("advancement.godfall_trinkets.shard_void.title", "Secret of Void");
+        add("advancement.godfall_trinkets.shard_void.desc", "Obtain Divine Shard — Null.");
+
+        add("advancement.godfall_trinkets.shard_shadow.title", "Shadow Assassin");
+        add("advancement.godfall_trinkets.shard_shadow.desc", "Obtain Divine Shard — Umbra.");
+
+        add("advancement.godfall_trinkets.shard_thunder.title", "Thunder Wrath");
+        add("advancement.godfall_trinkets.shard_thunder.desc", "Obtain Divine Shard — Fulmen.");
+
+        add("advancement.godfall_trinkets.shard_star.title", "Meteor Piercer");
+        add("advancement.godfall_trinkets.shard_star.desc", "Obtain Divine Shard — Meteor.");
+
+        add("advancement.godfall_trinkets.shard_rune.title", "Enchanted Glyph");
+        add("advancement.godfall_trinkets.shard_rune.desc", "Obtain Divine Shard — Glyph.");
+
+// Sword task
+        add("advancement.godfall_trinkets.sword_blank_start.title", "Beginning of Forging");
+        add("advancement.godfall_trinkets.sword_blank_start.desc", "Acquire blank sword template to start your forging journey.");
+
+        add("advancement.godfall_trinkets.sword_mid_forge.title", "Blade Onward");
+        add("advancement.godfall_trinkets.sword_mid_forge.desc", "Forge your longsword to intermediate tier.");
+
+// Hidden
+        add("advancement.godfall_trinkets.hardship_temper.title", "Enduring Tribulation");
+        add("advancement.godfall_trinkets.hardship_temper.desc", "Reach tier 5: Oblivion on Broken‑Destiny Core.");
+
+        add("advancement.godfall_trinkets.chest_find_shard.title", "Treasure‑Hunt for Divinity");
+        add("advancement.godfall_trinkets.chest_find_shard.desc", "Locate a Divine Shard inside a structure chest.");
     }
 }
