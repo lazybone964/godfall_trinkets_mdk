@@ -1,0 +1,6 @@
+{
+  "icon": "godfall_trinkets:slot/badge",
+  "order": 10,
+  "render_toggle": true,
+  "size": 1
+}
