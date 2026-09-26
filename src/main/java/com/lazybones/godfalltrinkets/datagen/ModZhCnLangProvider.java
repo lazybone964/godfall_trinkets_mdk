@@ -73,6 +73,8 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add("curios.identifier.head", "头饰");
         add("curios.identifier.necklace", "项链");
         add("curios.identifier.body", "胸饰");
+        add("curios.identifier.badge", "徽章");
+        add("curios.modifiers.badge", " ");
 
 // 凋零饰品名称
         add("item.godfall_trinkets.wither_heart", "枯骨之心");
@@ -405,5 +407,22 @@ public class ModZhCnLangProvider extends LanguageProvider {
 
         add("advancement.godfall_trinkets.chest_find_shard.title", "宝匣寻神");
         add("advancement.godfall_trinkets.chest_find_shard.desc", "从结构宝箱之中获得一枚神位碎片。");
+        // 功业徽记
+        add("item.godfall_trinkets.advancement_tally_trinket", "功业徽记");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line1", "每完成1个成就，最大生命值 +0.3%%");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line2", "每完成1个成就，伤害 +0.25%%");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line3", "每完成1个成就，伤害抗性 +0.2%%");
+        add("tooltip.godfall_trinkets.hold_shift_view_stats", "按住 §eShift§7 查看当前生效加成");
+        // 5个隐藏挑战成就
+        add("advancement.godfall_trinkets.secret_curse_survivor.title", "厄难余生");
+        add("advancement.godfall_trinkets.secret_curse_survivor.desc", "同时承受全部8种诅咒并存活40分钟");
+        add("advancement.godfall_trinkets.secret_tier1_vanquish.title", "凡躯弑神");
+        add("advancement.godfall_trinkets.secret_tier1_vanquish.desc", "以1阶破厄之核击杀监守者");
+        add("advancement.godfall_trinkets.secret_no_armor_champion.title", "裸身征伐");
+        add("advancement.godfall_trinkets.secret_no_armor_champion.desc", "不穿任何盔甲击杀凋零与末影龙");
+        add("advancement.godfall_trinkets.secret_boss_hunter.title", "幽冥猎狩");
+        add("advancement.godfall_trinkets.secret_boss_hunter.desc", "同一生命内击杀凋零、末影龙与监守者");
+        add("advancement.godfall_trinkets.secret_overload_power.title", "超限迸发");
+        add("advancement.godfall_trinkets.secret_overload_power.desc", "佩戴全部13枚神位碎片击杀监守者");
     }
 }

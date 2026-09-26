@@ -1,4 +1,4 @@
-// 1.20.1	2026-08-11T12:43:17.9659751	Item Models: godfall_trinkets
+// 1.20.1	2026-09-26T00:38:53.6821732	Item Models: godfall_trinkets
 88d90737119756a6f277c5a6e8729a33ed7614e3 assets/godfall_trinkets/models/item/abyss_god_boots.json
 a3a4fea7f80f556f3373068fbb4e984a5b3a6299 assets/godfall_trinkets/models/item/abyss_god_chestplate.json
 14a0852d40dd350176c7a1c781d357e8c7639dcd assets/godfall_trinkets/models/item/abyss_god_helmet.json
@@ -6,6 +6,7 @@ a3a4fea7f80f556f3373068fbb4e984a5b3a6299 assets/godfall_trinkets/models/item/aby
 51e967db6468cedc266d9db3644d1b771457f548 assets/godfall_trinkets/models/item/abyss_god_leggings.json
 275cd9e599c0cecf7112be7b760872695bca4c83 assets/godfall_trinkets/models/item/abyss_rune_ring.json
 401a20288fc72c5f080eee87d659ac2efc028f51 assets/godfall_trinkets/models/item/abyss_sword.json
+1f4f7453eed32ad31ba3123fc9550e07614a3975 assets/godfall_trinkets/models/item/advancement_tally_trinket.json
 8b1ddc52f6f8ad721d3db1dfd9943fe7a6b35988 assets/godfall_trinkets/models/item/barrier_bracelet.json
 4598528843c7031c32049a5fd866cad19f9f2ff5 assets/godfall_trinkets/models/item/blunting_amulet.json
 b3162e44b9b449ffbdb9631da17c3dd4ed1ab2e8 assets/godfall_trinkets/models/item/broken_core.json

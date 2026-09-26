@@ -99,5 +99,6 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.SHARD_THUNDER.get());
         basicItem(ModItems.SHARD_STAR.get());
         basicItem(ModItems.SHARD_RUNE.get());
+        basicItem(ModItems.ADVANCEMENT_TALLY_TRINKET.get());
     }
 }

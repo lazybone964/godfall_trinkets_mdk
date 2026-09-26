@@ -76,6 +76,11 @@ public class ModCuriosProvider extends CuriosDataProvider {
                 .icon(ResourceLocation.fromNamespaceAndPath(GodfallTrinkets.MOD_ID, "slot/necklace"))
                 .order(9)
                 .renderToggle(true);
+        createSlot("badge")
+                .size(1)
+                .icon(ResourceLocation.fromNamespaceAndPath(GodfallTrinkets.MOD_ID, "slot/badge"))
+                .order(10)
+                .renderToggle(true);
 
         // 关联实体-槽位
         createEntities("broken_core_slot_entities")
@@ -109,5 +114,8 @@ public class ModCuriosProvider extends CuriosDataProvider {
         createEntities("broken_necklace_slot_entities")
                 .addEntities(EntityType.PLAYER)
                 .addSlots("necklace");
+        createEntities("broken_waist_slot_entities")
+                .addEntities(EntityType.PLAYER)
+                .addSlots("badge");
     }
 }

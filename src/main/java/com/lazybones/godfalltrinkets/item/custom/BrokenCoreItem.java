@@ -198,6 +198,21 @@ public class BrokenCoreItem extends Item implements ICurioItem {
     public static boolean isReverse(int tier)                { return tier >= GodfallConfig.REVERSE_CURSE_TIER.get(); }
     public static boolean hasCalamityDR(int tier)            { return tier >= 5; }
 
+    /**
+     * 判断玩家是否同时承受全部8条诅咒：
+     * 佩戴破厄之核（未达反转境界）且没有咒厄转移坠吸收任何诅咒。
+     */
+    public static boolean hasAllEightCursesActive(Player player) {
+        if (player.level().isClientSide()) return false;
+        var coreOpt = CuriosApi.getCuriosInventory(player).resolve()
+                .flatMap(h -> h.findFirstCurio(s -> s.getItem() instanceof BrokenCoreItem));
+        if (coreOpt.isEmpty()) return false;
+        ItemStack core = coreOpt.get().stack();
+        int tier = ((BrokenCoreItem) core.getItem()).getTier(core);
+        if (tier >= GodfallConfig.REVERSE_CURSE_TIER.get()) return false;
+        return CurseTransferTrinketItem.getAbsorbedCurses(player).isEmpty();
+    }
+
     @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack currentStack) {
         LivingEntity entity = slotContext.entity();

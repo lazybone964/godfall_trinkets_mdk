@@ -1,4 +1,4 @@
-// 1.20.1	2026-08-10T14:59:11.0423173	Curios for godfall_trinkets
+// 1.20.1	2026-09-26T00:38:53.6860667	Curios for godfall_trinkets
 42b9baaa8afba52b9f39f6830fc7620e3eb75c70 data/godfall_trinkets/curios/entities/broken_amulet_slot_entities.json
 f6998bb3b09ab056ae95eaacba3ed3a7625cc4a7 data/godfall_trinkets/curios/entities/broken_back_slot_entities.json
 379b9563e21d1b218aba68b117702092ef055452 data/godfall_trinkets/curios/entities/broken_body_slot_entities.json
@@ -7,9 +7,11 @@ f6998bb3b09ab056ae95eaacba3ed3a7625cc4a7 data/godfall_trinkets/curios/entities/b
 4346f33a498b3b430f1c4d978e8121dd6bb996c3 data/godfall_trinkets/curios/entities/broken_head_slot_entities.json
 c11b075838e9b14e2c07d8aab63e30b54183db54 data/godfall_trinkets/curios/entities/broken_necklace_slot_entities.json
 be0858b7a7d1e3384a777e75221c638d09bfa5bb data/godfall_trinkets/curios/entities/broken_ring_slot_entities.json
+4974591a89bb90fab2b48b353ef79f80e1629bf7 data/godfall_trinkets/curios/entities/broken_waist_slot_entities.json
 273ea0704cade8471968f27ec94f0b153ac371b2 data/godfall_trinkets/curios/entities/curse_transfer_slot_entities.json
 15334602c76e0c873db68cfd9132d6310e21362d data/godfall_trinkets/curios/entities/god_shard_slot_entities.json
 41b66d8eb3e895d02a7af7d2e6435864a07a0587 data/godfall_trinkets/curios/slots/back.json
+2baf5a36f1d69fd329877ba07ceb6f3a0635a53d data/godfall_trinkets/curios/slots/badge.json
 7563a0e8eb1fbb6c919be5201ebc468daa21d085 data/godfall_trinkets/curios/slots/body.json
 a32be0b998c2119f21f5652f130dfe00ca218353 data/godfall_trinkets/curios/slots/bracelet.json
 261336f3f1a5f867e571dd060acbad6c27c5eb30 data/godfall_trinkets/curios/slots/broken_core_slot.json

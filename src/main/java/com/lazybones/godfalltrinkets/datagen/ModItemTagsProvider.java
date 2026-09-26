@@ -89,5 +89,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModItems.SHARD_THUNDER.get(),
                         ModItems.SHARD_STAR.get(),
                         ModItems.SHARD_RUNE.get());
+
+        // ========== 徽章槽标签 ==========
+        TagKey<Item> badgeTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("curios", "badge"));
+        this.tag(badgeTag).add(ModItems.ADVANCEMENT_TALLY_TRINKET.get());
     }
 }

@@ -3,13 +3,7 @@ package com.lazybones.godfalltrinkets.item;
 import com.google.common.collect.Multimap;
 import com.lazybones.godfalltrinkets.GodfallTrinkets;
 import com.lazybones.godfalltrinkets.item.armor.ArmorMaterials;
-import com.lazybones.godfalltrinkets.item.custom.ArmorItems;
-import com.lazybones.godfalltrinkets.item.custom.BrokenCoreItem;
-import com.lazybones.godfalltrinkets.item.custom.CurseSlotUnlockItem;
-import com.lazybones.godfalltrinkets.item.custom.CurseTransferTrinketItem;
-import com.lazybones.godfalltrinkets.item.custom.GodCoreItem;
-import com.lazybones.godfalltrinkets.item.custom.GodEvolutionStoneItem;
-import com.lazybones.godfalltrinkets.item.custom.GodfallTrinketItem;
+import com.lazybones.godfalltrinkets.item.custom.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -24,6 +18,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+
 import java.util.List;
 
 import java.util.UUID;
@@ -463,6 +458,10 @@ public class ModItems {
 
     public static final RegistryObject<GodCoreItem> GOD_CORE = ITEMS.register("god_core",
             () -> new GodCoreItem(new Item.Properties().stacksTo(1).fireResistant()));
+    // 功业徽记：必须注册为 AdvancementTallyTrinketItem，才能触发其自定义的按Shift悬浮文本与成就加成逻辑
+    public static final RegistryObject<AdvancementTallyTrinketItem> ADVANCEMENT_TALLY_TRINKET = ITEMS.register("advancement_tally_trinket",
+            () -> new AdvancementTallyTrinketItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }

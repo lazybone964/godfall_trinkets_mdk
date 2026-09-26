@@ -17,6 +17,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("curios.identifier.charm", "Amulet");
         add("curios.identifier.ring", "Ring");
         add("curios.identifier.bracelet", "Handcuffs");
+        add("curios.identifier.badge", "Badge");
+        add("curios.modifiers.badge", " ");
         add("curios.modifiers.charm", " ");
         add("curios.modifiers.god_shard_slot", " ");
         add("curios.modifiers.ring", " ");
@@ -221,5 +223,22 @@ public class ModEnUsLangProvider extends LanguageProvider {
 
         add("advancement.godfall_trinkets.chest_find_shard.title", "Treasure‑Hunt for Divinity");
         add("advancement.godfall_trinkets.chest_find_shard.desc", "Locate a Divine Shard inside a structure chest.");
+        // Advancement Tally Trinket
+        add("item.godfall_trinkets.advancement_tally_trinket", "Advancement Tally Trinket");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line1", "+0.3%% Max Health per completed advancement");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line2", "+0.25%% Damage per completed advancement");
+        add("tooltip.godfall_trinkets.desc.advancement_tally_trinket.line3", "+0.2%% Damage Resistance per completed advancement");
+        add("tooltip.godfall_trinkets.hold_shift_view_stats", "Hold SHIFT to view current bonuses");
+        // 5 hidden challenge advancements
+        add("advancement.godfall_trinkets.secret_curse_survivor.title", "Curse Survivor");
+        add("advancement.godfall_trinkets.secret_curse_survivor.desc", "Survive 40 minutes while bearing all 8 curses at once");
+        add("advancement.godfall_trinkets.secret_tier1_vanquish.title", "Mortal Godslayer");
+        add("advancement.godfall_trinkets.secret_tier1_vanquish.desc", "Slay the Warden while wearing a Tier 1 Broken Core");
+        add("advancement.godfall_trinkets.secret_no_armor_champion.title", "Unarmored Champion");
+        add("advancement.godfall_trinkets.secret_no_armor_champion.desc", "Defeat the Wither and the Ender Dragon without wearing armor");
+        add("advancement.godfall_trinkets.secret_boss_hunter.title", "Abyssal Hunter");
+        add("advancement.godfall_trinkets.secret_boss_hunter.desc", "Slay the Wither, Ender Dragon, and Warden in a single life");
+        add("advancement.godfall_trinkets.secret_overload_power.title", "Overload Surge");
+        add("advancement.godfall_trinkets.secret_overload_power.desc", "Slay the Warden while wearing all 13 God Shards");
     }
 }
