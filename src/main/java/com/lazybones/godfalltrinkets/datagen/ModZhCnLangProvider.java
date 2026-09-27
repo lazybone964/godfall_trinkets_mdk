@@ -326,7 +326,7 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add("tooltip.godfall_trinkets.godcore.5", "神体护佑：单次承受伤害上限锁定最大生命值 30%");
         add("tooltip.godfall_trinkets.godcore.6", "神速回复：受伤无敌帧延长至 30 tick");
         add("tooltip.godfall_trinkets.godcore.7", "天穹主宰：创造飞行移速大幅提升，飞行时伤害 +30%");
-        add("tooltip.godfall_trinkets.godcore.8", "破甲真伤：攻击无视护甲/韧性/抗性/Boss伤害上限");
+        add("tooltip.godfall_trinkets.godcore.8", "破甲真伤：攻击无视护甲/韧性/抗性");
         // 按键绑定
         add("key.category.godfall_trinkets", "登神残饰");
         add("key.godfall_trinkets.open_ender_chest", "打开末影箱");
@@ -424,5 +424,27 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add("advancement.godfall_trinkets.secret_boss_hunter.desc", "同一生命内击杀凋零、末影龙与监守者");
         add("advancement.godfall_trinkets.secret_overload_power.title", "超限迸发");
         add("advancement.godfall_trinkets.secret_overload_power.desc", "佩戴全部13枚神位碎片击杀监守者");
+        // ========== 新增附魔翻译 ==========
+        add("enchantment.godfall_trinkets.godfall_protection", "神陨庇护");
+        add("enchantment.godfall_trinkets.godfall_protection.desc", "佩戴破厄之核时，每级提供1%伤害减免，最高5%。未佩戴破厄之核无效果。");
+
+        add("enchantment.godfall_trinkets.shard_resonance", "碎核共鸣");
+        add("enchantment.godfall_trinkets.shard_resonance.desc", "根据佩戴神位碎片数量获得伤害加成，每级+5%×碎片数量，无碎片则无加成。");
+
+        add("enchantment.godfall_trinkets.void_drain", "虚空汲取");
+        add("enchantment.godfall_trinkets.void_drain.desc", "攻击命中，按攻击伤害百分比吸取生命值。");
+
+        add("enchantment.godfall_trinkets.immortal_oath", "不朽誓约");
+        add("enchantment.godfall_trinkets.immortal_oath.desc", "胸甲专属；优先于不死图腾触发复活效果，内置60秒冷却。");
+
+        add("enchantment.godfall_trinkets.abyss_gaze", "深渊凝视");
+        add("enchantment.godfall_trinkets.abyss_gaze.desc", "攻击血量低于30%敌人，施加深渊标记Debuff，提高目标受到的伤害。");
+
+        add("enchantment.godfall_trinkets.fury_of_godfall", "神陨之怒");
+        add("enchantment.godfall_trinkets.fury_of_godfall.desc", "连续攻击同一敌人叠加神陨怒层Debuff，提高目标承受伤害，脱战3秒层数消失。");
+
+// ========== 自定义Debuff效果名称 ==========
+        add("effect.godfall_trinkets.abyss_mark", "深渊标记");
+        add("effect.godfall_trinkets.fallen_wrath_stack", "神陨怒层");
     }
 }

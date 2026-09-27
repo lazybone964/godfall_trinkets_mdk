@@ -139,7 +139,7 @@ public class GodCoreEvents {
         }
     }
 
-    // ==================== 权能8：无视护甲/韧性/抗性/Boss限伤 ====================
+    // ==================== 权能8：无视护甲/韧性/抗性 ====================
     @SubscribeEvent
     public static void onGodPiercing(LivingHurtEvent event) {
         if (!GodfallConfig.ENABLE_ARMOR_PIERCE.get()) return;

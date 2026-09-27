@@ -56,7 +56,7 @@ public class ArmorItems extends ArmorItem {
     // 神陨全套：生命恢复+抗性
     public static void applyGodSetEffects(Player player) {
         int EFFECT_DURATION = 400;
-        player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, EFFECT_DURATION, 3,false,true));
+        player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, EFFECT_DURATION, 9,false,true));
         player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, EFFECT_DURATION, 1,false,true));
     }
 

@@ -142,7 +142,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("tooltip.godfall_trinkets.godcore.5", "Divine Ward: Damage capped at 30% max HP per hit");
         add("tooltip.godfall_trinkets.godcore.6", "Swift Recovery: Invulnerability frames extended to 30 ticks");
         add("tooltip.godfall_trinkets.godcore.7", "Sky Sovereign: Creative flight speed boosted, +30% flight damage");
-        add("tooltip.godfall_trinkets.godcore.8", "Absolute Pierce: Ignore armor/toughness/resistance/boss cap");
+        add("tooltip.godfall_trinkets.godcore.8", "Absolute Pierce: Ignore armor/toughness/resistance");
         // Keybindings
         add("key.category.godfall_trinkets", "Godfall Trinkets");
         add("key.godfall_trinkets.open_ender_chest", "Open Ender Chest");
@@ -240,5 +240,28 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("advancement.godfall_trinkets.secret_boss_hunter.desc", "Slay the Wither, Ender Dragon, and Warden in a single life");
         add("advancement.godfall_trinkets.secret_overload_power.title", "Overload Surge");
         add("advancement.godfall_trinkets.secret_overload_power.desc", "Slay the Warden while wearing all 13 God Shards");
+        // ========== Enchantments ==========
+        add("enchantment.godfall_trinkets.godfall_protection", "Godfall Shelter");
+        add("enchantment.godfall_trinkets.godfall_protection.desc", "Reduces damage taken by 1% per level while Broken Core is equipped. No effect without Broken Core.");
+
+        add("enchantment.godfall_trinkets.shard_resonance", "Shard Resonance");
+        add("enchantment.godfall_trinkets.shard_resonance.desc", "Bonus damage scales with number of equipped God Shards: +5% × shards per level. No bonus with zero shards.");
+
+        add("enchantment.godfall_trinkets.void_drain", "Void Siphon");
+        add("enchantment.godfall_trinkets.void_drain.desc", "Steal percentage of dealt damage as health on hit.");
+
+        add("enchantment.godfall_trinkets.immortal_oath", "Oath of Immortality");
+        add("enchantment.godfall_trinkets.immortal_oath.desc", "Chestplate‑only. Triggers revival before Totem of Undying.  60s cooldown.");
+
+        add("enchantment.godfall_trinkets.abyss_gaze", "Abyss Gaze");
+        add("enchantment.godfall_trinkets.abyss_gaze.desc", "Applies Abyss Mark debuff to low‑health targets, increasing damage they receive.");
+
+        add("enchantment.godfall_trinkets.fury_of_godfall", "Godfall Fury");
+        add("enchantment.godfall_trinkets.fury_of_godfall.desc", "Stacks Wrath debuff on repeated hits; stacks fade after 3 seconds out‑of‑combat.");
+
+// ========== MobEffects ==========
+        add("effect.godfall_trinkets.abyss_mark", "Abyss Mark");
+        add("effect.godfall_trinkets.fallen_wrath_stack", "Fallen Wrath Stack");
+
     }
 }

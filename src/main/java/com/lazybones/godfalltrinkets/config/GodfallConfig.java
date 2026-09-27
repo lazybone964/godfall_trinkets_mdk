@@ -125,7 +125,7 @@ public class GodfallConfig {
         INVULNERABLE_TICK = b.comment("挨打无敌持续刻数").defineInRange("invulnerable_tick", 30, 0, 200);
         CREATIVE_FLY_SPEED_MOD = b.comment("创造飞行移速增幅").defineInRange("creative_fly_speed_mod", 0.15, 0.0, 1.0);
         CREATIVE_FLY_DAMAGE_MOD = b.comment("创造飞行状态增伤比例（0.30=30%）").defineInRange("creative_fly_damage_mod", 0.30, 0.0, 100.0);
-        ENABLE_ARMOR_PIERCE = b.comment("攻击是否无视护甲、韧性、药水抗性、Boss固定限伤").define("enable_armor_pierce", true);
+        ENABLE_ARMOR_PIERCE = b.comment("攻击是否无视护甲、韧性、药水抗性").define("enable_armor_pierce", true);
         b.pop();
 
         // ── 模块二：13枚神位碎片 ──

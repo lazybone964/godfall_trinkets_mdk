@@ -19,8 +19,8 @@ import java.util.Map;
 public class CurioRegenBuffEvent {
     // 30分钟游戏刻
     private static final int BUFF_DURATION = 30 * 60 * 20;
-    // 再生IV 放大器=3
-    private static final int REGEN_AMPLIFIER = 3;
+    // 再生IV 放大器=9
+    private static final int REGEN_AMPLIFIER = 9;
     // 目标饰品注册ID
     private static final String TARGET_ITEM_ID = "broken_core";
     // 玩家NBT标记：是否已发放本次佩戴的buff

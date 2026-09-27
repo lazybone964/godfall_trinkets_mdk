@@ -51,6 +51,8 @@ public class GodfallTrinkets {
         MinecraftForge.EVENT_BUS.register(this);
         // 使用传入的context对象注册配置，消除弃用警告
         context.registerConfig(ModConfig.Type.COMMON, GodfallConfig.SPEC, MOD_ID + "-common.toml");
+        ModMobEffects.MOB_EFFECTS.register(bus);
+        ModEnchantments.ENCHANTMENTS.register(bus);
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID)

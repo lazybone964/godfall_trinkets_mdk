@@ -274,4 +274,20 @@ public class AdvancementHelper {
         }
         return count;
     }
+    /**
+     * 统计god_shard_slot槽已经装备碎片数量（最多13）
+     */
+    public static int countEquippedShards(ServerPlayer sp) {
+        LazyOptional<ICuriosItemHandler> curiosOpt = CuriosApi.getCuriosInventory(sp);
+        if (!curiosOpt.isPresent()) return 0;
+        ICuriosItemHandler handler = curiosOpt.orElseThrow(() -> new IllegalStateException("Curios capability missing on player"));
+        var slotOpt = handler.getCurios().get("god_shard_slot");
+        if (slotOpt == null) return 0;
+        IDynamicStackHandler stacks = slotOpt.getStacks();
+        int cnt = 0;
+        for (int i = 0; i < 13; i++) {
+            if (!stacks.getStackInSlot(i).isEmpty()) cnt++;
+        }
+        return cnt;
+    }
 }
