@@ -1,6 +1,7 @@
 package com.lazybones.godfalltrinkets.event;
 
 import com.lazybones.godfalltrinkets.GodfallTrinkets;
+import com.lazybones.godfalltrinkets.config.GodfallConfig;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -14,13 +15,9 @@ import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.type.inventory.ICurioStacksHandler;
 import java.util.Map;
 
-// 佩戴破厄之核仅发放一次30分钟再生IV，不持续刷新时长
 @Mod.EventBusSubscriber(modid = GodfallTrinkets.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class CurioRegenBuffEvent {
-    // 30分钟游戏刻
-    private static final int BUFF_DURATION = 30 * 60 * 20;
-    // 再生IV 放大器=9
-    private static final int REGEN_AMPLIFIER = 9;
+
     // 目标饰品注册ID
     private static final String TARGET_ITEM_ID = "broken_core";
     // 玩家NBT标记：是否已发放本次佩戴的buff
@@ -34,8 +31,11 @@ public class CurioRegenBuffEvent {
         }
         Player player = event.player;
         CompoundTag playerNbt = player.getPersistentData();
-        boolean wearTrinket = false;
 
+        int regenAmp = GodfallConfig.BROKEN_CORE_REGEN_AMPLIFIER.get();
+        int durationTicks = GodfallConfig.BROKEN_CORE_REGEN_DURATION_TICKS.get();
+
+        boolean wearTrinket = false;
         // 遍历Curios槽，检测是否佩戴目标饰品
         var optionalCurioInventory = CuriosApi.getCuriosInventory(player);
         if (optionalCurioInventory.isPresent()) {
@@ -53,23 +53,23 @@ public class CurioRegenBuffEvent {
         }
 
         if (wearTrinket) {
-            // 佩戴状态：无标记才发放buff，不重复刷新时长
+            //佩戴状态：无标记才发放buff，不重复刷新时长
             if (!playerNbt.getBoolean(TAG_HAS_GIVEN_REGEN)) {
                 player.addEffect(new MobEffectInstance(
                         MobEffects.REGENERATION,
-                        BUFF_DURATION,
-                        REGEN_AMPLIFIER,
-                        false,  // 显示药水粒子
-                        true,   // 显示图标
-                        true    // 死亡不清除
+                        durationTicks,
+                        regenAmp,
+                        false,  //显示药水粒子
+                        true,   //显示图标
+                        true    //死亡不清除
                 ));
                 playerNbt.putBoolean(TAG_HAS_GIVEN_REGEN, true);
             }
         } else {
-            // 卸下饰品：删除标记、移除对应等级再生
+            //卸下饰品：删除标记、移除【当前配置等级】的再生效果
             playerNbt.remove(TAG_HAS_GIVEN_REGEN);
             MobEffectInstance currentRegen = player.getEffect(MobEffects.REGENERATION);
-            if (currentRegen != null && currentRegen.getAmplifier() == REGEN_AMPLIFIER) {
+            if (currentRegen != null && currentRegen.getAmplifier() == regenAmp) {
                 player.removeEffect(MobEffects.REGENERATION);
             }
         }

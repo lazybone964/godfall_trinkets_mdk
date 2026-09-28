@@ -2,15 +2,20 @@ package com.lazybones.godfalltrinkets.item.custom;
 
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
+import com.lazybones.godfalltrinkets.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurio.DropRule;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import javax.annotation.Nullable;
@@ -34,7 +39,17 @@ public class GodfallTrinketItem extends Item implements ICurioItem {
 
     @Override
     public boolean canEquip(SlotContext slotContext, ItemStack stack) {
-        return slotContext.identifier().endsWith(slotId);
+        if (!slotContext.identifier().endsWith(slotId)) return false;
+        // 需要佩戴破厄之核才能装备
+        if (!(slotContext.entity() instanceof Player player)) return false;
+        return hasBrokenCore(player);
+    }
+
+    /** 检测玩家是否已佩戴破厄之核 */
+    private static boolean hasBrokenCore(Player player) {
+        return CuriosApi.getCuriosInventory(player).resolve()
+                .flatMap(handler -> handler.findFirstCurio(s -> s.getItem() instanceof BrokenCoreItem))
+                .isPresent();
     }
 
     @Override
@@ -62,6 +77,11 @@ public class GodfallTrinketItem extends Item implements ICurioItem {
         for (String lineKey : descLines) {
             tooltip.add(Component.translatable(lineKey).withStyle(ChatFormatting.GRAY));
         }
+    }
+    @Override
+    public DropRule getDropRule(SlotContext slotContext, DamageSource source, int lootingLevel, boolean recentlyHit, ItemStack stack) {
+        //死亡永远保留饰品，不掉落
+        return DropRule.ALWAYS_KEEP;
     }
 
     @Override

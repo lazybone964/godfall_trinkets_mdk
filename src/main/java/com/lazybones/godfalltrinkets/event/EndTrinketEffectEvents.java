@@ -52,71 +52,75 @@ public class EndTrinketEffectEvents {
     // 受伤事件：处理所有伤害相关的逻辑（免疫、反弹、增伤、保命）
     @SubscribeEvent
     public static void onEntityHurt(LivingHurtEvent event) {
-        if (!(event.getEntity() instanceof Player p)) return;
-
-        Entity target = event.getEntity(); // 被攻击的目标（玩家）
-        Entity sourceEntity = event.getSource().getEntity(); // 攻击源实体
-
+        LivingEntity victim = event.getEntity();
+        Entity attacker = event.getSource().getEntity();
         float damage = event.getAmount();
-        boolean fatal = p.getHealth() - damage <= 0;
 
-        // --- 增伤逻辑开始 ---
-        float dmgMult = 1.0F;
-        // 龙核之心增伤
-        if (hasTrinket(p, ModItems.DRAGON_CORE_HEART)) {
-            boolean isBoss = target instanceof EnderDragon || target instanceof WitherBoss || target instanceof Warden;
-            boolean isEndMob = target instanceof EnderMan || target instanceof Shulker; // ← 修复：EnderMan
-            if (isBoss || isEndMob) dmgMult *= 1.4F;
-        }
-        // 寂灭龙脊残血全局增伤
-        if (hasTrinket(p, ModItems.DRAGON_SPINE_END)) {
-            float hpPercent = p.getHealth() / p.getMaxHealth();
-            float dmgBoost = 1 - hpPercent;
-            dmgMult *= (1 + dmgBoost);
-        }
-        damage = damage * dmgMult;
-        // --- 增伤逻辑结束 ---
-
-        // 龙核之心免疫末影龙冲撞 & 龙息
-        if (hasTrinket(p, ModItems.DRAGON_CORE_HEART)) {
-            var src = event.getSource();
-            boolean isDragonBreath = src.is(DamageTypes.DRAGON_BREATH);
-            boolean isDragonAttack = src.getEntity() instanceof EnderDragon; // ← 替代 DRAGON_ATTACK
-            if (isDragonBreath || isDragonAttack) {
-                damage = 0;
+        // ===== 1) 玩家作为攻击者：龙核之心 / 寂灭龙脊 增伤（基于攻击来源） =====
+        if (attacker instanceof Player p) {
+            float dmgMult = 1.0F;
+            // 龙核之心：对Boss/末影系生物增伤40%
+            if (hasTrinket(p, ModItems.DRAGON_CORE_HEART)) {
+                boolean isBoss = victim instanceof EnderDragon || victim instanceof WitherBoss || victim instanceof Warden;
+                boolean isEndMob = victim instanceof EnderMan || victim instanceof Shulker;
+                if (isBoss || isEndMob) dmgMult *= 1.4F;
+            }
+            // 寂灭龙脊：残血全局增伤
+            if (hasTrinket(p, ModItems.DRAGON_SPINE_END)) {
+                float hpPercent = p.getHealth() / p.getMaxHealth();
+                dmgMult *= (1 + (1 - hpPercent));
+            }
+            if (dmgMult != 1.0F) {
+                damage *= dmgMult;
+                event.setAmount(damage);
             }
         }
 
-        // 终末之眼：致命伤消耗末影珍珠回血传送
-        if (hasTrinket(p, ModItems.EYE_OF_THE_END) && fatal) {
-            long now = p.level().getGameTime();
-            long cd = p.getPersistentData().getLong(EYE_COOLDOWN_TAG);
-            if (now >= cd) {
-                int pearlSlot = -1;
-                for (int i = 0; i < p.getInventory().getContainerSize(); i++) {
-                    ItemStack stack = p.getInventory().getItem(i);
-                    if (stack.getItem() == Items.ENDER_PEARL && stack.getCount() > 0) {
-                        pearlSlot = i;
-                        break;
-                    }
-                }
-                if (pearlSlot != -1) {
-                    p.getInventory().removeItem(pearlSlot, 1);
-                    p.heal(p.getMaxHealth() * 0.3F);
-                    BlockPos safe = findSafePos(p.blockPosition(), p.level(), 5);
-                    p.setPos(safe.getX(), safe.getY(), safe.getZ());
-                    p.getPersistentData().putLong(EYE_COOLDOWN_TAG, now + HOUR_TICK);
+        // ===== 2) 玩家作为受害者：免疫 / 保命 / 反弹 =====
+        if (victim instanceof Player p) {
+            boolean fatal = p.getHealth() - damage <= 0;
+
+            // 龙核之心免疫末影龙冲撞 & 龙息
+            if (hasTrinket(p, ModItems.DRAGON_CORE_HEART)) {
+                var src = event.getSource();
+                boolean isDragonBreath = src.is(DamageTypes.DRAGON_BREATH);
+                boolean isDragonAttack = src.getEntity() instanceof EnderDragon;
+                if (isDragonBreath || isDragonAttack) {
                     damage = 0;
                 }
             }
-        }
 
-        // 寂灭龙脊25%概率反弹30%龙伤
-        if (hasTrinket(p, ModItems.DRAGON_SPINE_END) && sourceEntity instanceof LivingEntity attacker && RAND.nextFloat() <= 0.25F) {
-            attacker.hurt(event.getSource(), damage * 0.3F);
-        }
+            // 终末之眼：致命伤消耗末影珍珠回血传送
+            if (hasTrinket(p, ModItems.EYE_OF_THE_END) && fatal) {
+                long now = p.level().getGameTime();
+                long cd = p.getPersistentData().getLong(EYE_COOLDOWN_TAG);
+                if (now >= cd) {
+                    int pearlSlot = -1;
+                    for (int i = 0; i < p.getInventory().getContainerSize(); i++) {
+                        ItemStack stack = p.getInventory().getItem(i);
+                        if (stack.getItem() == Items.ENDER_PEARL && stack.getCount() > 0) {
+                            pearlSlot = i;
+                            break;
+                        }
+                    }
+                    if (pearlSlot != -1) {
+                        p.getInventory().removeItem(pearlSlot, 1);
+                        p.heal(p.getMaxHealth() * 0.3F);
+                        BlockPos safe = findSafePos(p.blockPosition(), p.level(), 5);
+                        p.setPos(safe.getX(), safe.getY(), safe.getZ());
+                        p.getPersistentData().putLong(EYE_COOLDOWN_TAG, now + HOUR_TICK);
+                        damage = 0;
+                    }
+                }
+            }
 
-        event.setAmount(Math.max(0, damage));
+            // 寂灭龙脊25%概率反弹30%伤害
+            if (hasTrinket(p, ModItems.DRAGON_SPINE_END) && attacker instanceof LivingEntity atk && RAND.nextFloat() <= 0.25F) {
+                atk.hurt(event.getSource(), damage * 0.3F);
+            }
+
+            event.setAmount(Math.max(0, damage));
+        }
     }
 
     // Tick：残晶冠锁当前血量1点、护甲韧性倍率；寂灭龙脊移速攻速加成

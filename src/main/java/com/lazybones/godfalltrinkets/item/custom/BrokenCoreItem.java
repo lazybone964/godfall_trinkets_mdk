@@ -10,6 +10,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -25,8 +26,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurio.DropRule;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
-
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
@@ -314,5 +315,11 @@ public class BrokenCoreItem extends Item implements ICurioItem {
             return player.isCreative();
         }
         return false;
+    }
+    // 在BrokenCoreItem类内部增加
+    @Override
+    public DropRule getDropRule(SlotContext slotContext, DamageSource source, int lootingLevel, boolean recentlyHit, ItemStack stack) {
+        //死亡永远保留饰品，不掉落
+        return DropRule.ALWAYS_KEEP;
     }
 }

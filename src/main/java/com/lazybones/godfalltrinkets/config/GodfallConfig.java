@@ -9,14 +9,12 @@ import java.util.List;
 public class GodfallConfig {
 
     // ==================== 模块一：破厄之核 / 神格核心养成 ====================
-
     public static final ForgeConfigSpec.BooleanValue AUTO_GIVE_BROKEN_CORE;
     public static final ForgeConfigSpec.DoubleValue CORE_EXP_MULTIPLIER;
     public static final ForgeConfigSpec.IntValue[] TIER_EXP = new ForgeConfigSpec.IntValue[10];
     public static final ForgeConfigSpec.IntValue SHIELD_MAX_BASE;
     public static final ForgeConfigSpec.IntValue SHIELD_COOLDOWN_TICK;
     public static final ForgeConfigSpec.IntValue REVERSE_CURSE_TIER;
-
     public static final ForgeConfigSpec.BooleanValue AUTO_GOD_UPGRADE_STONE;
     public static final ForgeConfigSpec.DoubleValue GOD_CORE_SHARD_POWER_MOD;
     public static final ForgeConfigSpec.DoubleValue GOD_CORE_ALL_ATTR_ADD;
@@ -28,6 +26,10 @@ public class GodfallConfig {
     public static final ForgeConfigSpec.DoubleValue CREATIVE_FLY_SPEED_MOD;
     public static final ForgeConfigSpec.DoubleValue CREATIVE_FLY_DAMAGE_MOD;
     public static final ForgeConfigSpec.BooleanValue ENABLE_ARMOR_PIERCE;
+    //新增
+    public static final ForgeConfigSpec.IntValue BROKEN_CORE_REGEN_AMPLIFIER;
+    public static final ForgeConfigSpec.IntValue BROKEN_CORE_REGEN_DURATION_TICKS;
+
 
     // ==================== 模块二：13枚神位碎片 ====================
 
@@ -126,7 +128,16 @@ public class GodfallConfig {
         CREATIVE_FLY_SPEED_MOD = b.comment("创造飞行移速增幅").defineInRange("creative_fly_speed_mod", 0.15, 0.0, 1.0);
         CREATIVE_FLY_DAMAGE_MOD = b.comment("创造飞行状态增伤比例（0.30=30%）").defineInRange("creative_fly_damage_mod", 0.30, 0.0, 100.0);
         ENABLE_ARMOR_PIERCE = b.comment("攻击是否无视护甲、韧性、药水抗性").define("enable_armor_pierce", true);
+        BROKEN_CORE_REGEN_AMPLIFIER = b
+                .comment("破厄之核佩戴给予再生buff的等级(放大器，0=再生I，9=再生X)")
+                .defineInRange("broken_core_regen_amplifier",9,0,255);
+
+        BROKEN_CORE_REGEN_DURATION_TICKS = b
+                .comment("破厄之核佩戴再生buff持续时间，单位刻(20刻=1秒)，36000刻=30分钟")
+                .defineInRange("broken_core_regen_duration_ticks",72000,0,Integer.MAX_VALUE);
+
         b.pop();
+
 
         // ── 模块二：13枚神位碎片 ──
         b.push("2. 13枚神位碎片");

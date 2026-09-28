@@ -1,29 +1,24 @@
 package com.lazybones.godfalltrinkets.event;
 
 import com.lazybones.godfalltrinkets.GodfallTrinkets;
+import com.lazybones.godfalltrinkets.item.ModItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ForgeRegistries;
 import top.theillusivec4.curios.api.CuriosApi;
-import top.theillusivec4.curios.api.type.inventory.ICurioStacksHandler;
-import java.util.Map;
 
 @Mod.EventBusSubscriber(modid = GodfallTrinkets.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ShockAmuletSlowEvent {
-    // 震斥护符物品ID
-    private static final String SHOCK_AMULET_ID = "shock_amulet";
     // 30秒 = 30 * 20 tick
     private static final int SLOW_DURATION = 30 * 20;
     // 缓慢I 放大器0
     private static final int SLOW_AMP = 0;
 
     @SubscribeEvent
-    public void onPlayerMeleeHit(LivingAttackEvent event) {
+    public static void onPlayerMeleeHit(LivingAttackEvent event) {
         // 1. 攻击者不是玩家，直接跳过
         if (!(event.getSource().getEntity() instanceof Player player)) return;
         // 客户端不处理逻辑
@@ -42,22 +37,10 @@ public class ShockAmuletSlowEvent {
         ));
     }
 
-    /** 遍历Curios槽检测是否佩戴震斥护符 */
-    private boolean hasShockAmulet(Player player) {
-        var opt = CuriosApi.getCuriosInventory(player);
-        if (!opt.isPresent()) return false;
-        Map<String, ICurioStacksHandler> allSlots = opt.resolve().get().getCurios();
-        for (ICurioStacksHandler handler : allSlots.values()) {
-            for (int i = 0; i < handler.getSlots(); i++) {
-                ItemStack stack = handler.getStacks().getStackInSlot(i);
-                if (!stack.isEmpty()) {
-                    String itemId = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                    if (SHOCK_AMULET_ID.equals(itemId)) {
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
+    /** 检测是否佩戴震斥护符（用 findFirstCurio 直接匹配物品，不再字符串比较） */
+    private static boolean hasShockAmulet(Player player) {
+        return CuriosApi.getCuriosInventory(player).resolve()
+                .flatMap(handler -> handler.findFirstCurio(stack -> stack.getItem() == ModItems.SHOCK_AMULET.get()))
+                .isPresent();
     }
 }

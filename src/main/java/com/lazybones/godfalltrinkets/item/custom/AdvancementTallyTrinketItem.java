@@ -4,6 +4,7 @@ import com.lazybones.godfalltrinkets.util.AdvancementHelper;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -15,6 +16,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurio;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 import net.minecraft.client.gui.screens.Screen;
 
@@ -158,5 +160,10 @@ public class AdvancementTallyTrinketItem extends Item implements ICurioItem {
      */
     public static double getDamageResistance(int count) {
         return Math.min(count * RESIST_PER_ADV, 0.99);
+    }
+    @Override
+    public ICurio.DropRule getDropRule(SlotContext slotContext, DamageSource source, int lootingLevel, boolean recentlyHit, ItemStack stack) {
+        //死亡永远保留饰品，不掉落
+        return ICurio.DropRule.ALWAYS_KEEP;
     }
 }
