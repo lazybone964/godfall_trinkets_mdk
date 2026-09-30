@@ -461,6 +461,15 @@ public class ModItems {
     // 功业徽记：必须注册为 AdvancementTallyTrinketItem，才能触发其自定义的按Shift悬浮文本与成就加成逻辑
     public static final RegistryObject<AdvancementTallyTrinketItem> ADVANCEMENT_TALLY_TRINKET = ITEMS.register("advancement_tally_trinket",
             () -> new AdvancementTallyTrinketItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> STOMACH_POUCH = ITEMS.register("stomach_pouch",
+            () -> new StomachPouchItem(new Item.Properties().stacksTo(1),
+                    "body",
+                    new String[]{
+                            "tooltip.godfall_trinkets.stomach_pouch.desc"
+                    },
+                    null
+            ));
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

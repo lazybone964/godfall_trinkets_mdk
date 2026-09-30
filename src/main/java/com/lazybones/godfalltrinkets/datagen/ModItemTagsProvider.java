@@ -70,7 +70,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         TagKey<Item> bodyTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("curios", "body"));
         this.tag(bodyTag)
-                .add(ModItems.WARDEN_WEIGHT.get(),ModItems.WITHER_HEART.get(), ModItems.DRAGON_CORE_HEART.get());
+                .add(ModItems.WARDEN_WEIGHT.get(),
+                        ModItems.WITHER_HEART.get(),
+                        ModItems.DRAGON_CORE_HEART.get(),
+                        ModItems.STOMACH_POUCH.get()
+                );
         TagKey<Item> backTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("curios", "back"));
         this.tag(backTag).add(ModItems.DRAGON_SPINE_END.get());
         // ========== 神位碎片槽标签 ==========

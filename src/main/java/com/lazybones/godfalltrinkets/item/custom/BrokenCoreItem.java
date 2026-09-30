@@ -322,4 +322,10 @@ public class BrokenCoreItem extends Item implements ICurioItem {
         //死亡永远保留饰品，不掉落
         return DropRule.ALWAYS_KEEP;
     }
+
+    @Override
+    public DropRule getDropRule(LivingEntity livingEntity, ItemStack stack) {
+        //死亡永远保留饰品，不掉落（旧签名兼容）
+        return DropRule.ALWAYS_KEEP;
+    }
 }

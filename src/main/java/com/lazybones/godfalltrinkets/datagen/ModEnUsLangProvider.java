@@ -262,6 +262,17 @@ public class ModEnUsLangProvider extends LanguageProvider {
 // ========== MobEffects ==========
         add("effect.godfall_trinkets.abyss_mark", "Abyss Mark");
         add("effect.godfall_trinkets.fallen_wrath_stack", "Fallen Wrath Stack");
+// ========== Stomach Pouch 大胃袋 ==========
+        add("item.godfall_trinkets.stomach_pouch", "Stomach Pouch");
+        add("tooltip.godfall_trinkets.stomach_pouch.desc", "Consumes food and stores its nutrition. Gain percentage‑based attribute bonuses from stored hunger and saturation. Does not decay over time; some stored nutrition will be lost upon death while equipped.");
+        add("tooltip.godfall_trinkets.stomach_pouch.store","Stored Hunger: %d | Stored Saturation: %.1f");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_dmg","▶ All‑Damage Bonus: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_hp","▶ Max Health Bonus: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_armor","▶ Armor Percentage Bonus: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_tough","▶ Armor Toughness Percentage Bonus: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_kr","▶ Knockback Resistance: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_luck","▶ Luck Percentage Bonus: %.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_atk_spd","▶ Attack Speed Percentage Bonus: %.1f%%");
 
     }
 }

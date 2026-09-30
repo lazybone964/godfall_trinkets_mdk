@@ -22,7 +22,6 @@ import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import top.theillusivec4.curios.api.CuriosApi;
-import top.theillusivec4.curios.api.event.CurioChangeEvent;
 
 import java.util.*;
 
@@ -64,6 +63,29 @@ public class TrinketGrowthEvents {
         findCore(player).ifPresent(core -> {
             applyHungerCurse(player, core);
             applyDebuffCurse(player, core);
+        });
+
+        ejectTrinketsWithoutCore(player);
+    }
+
+    /** 未佩戴破厄之核/神格却佩戴普通饰品时，弹回这些饰品（死亡/重进存档恢复完成后破厄之核已在饰品栏，不会被误弹） */
+    private static void ejectTrinketsWithoutCore(Player player) {
+        if (player.tickCount % 20 != 0) return;
+        boolean hasCore = CuriosApi.getCuriosInventory(player).resolve()
+                .flatMap(h -> h.findFirstCurio(s -> s.getItem() instanceof BrokenCoreItem))
+                .isPresent();
+        if (hasCore) return;
+        CuriosApi.getCuriosInventory(player).resolve().ifPresent(handler -> {
+            for (var entry : handler.getCurios().entrySet()) {
+                var stacks = entry.getValue().getStacks();
+                for (int i = entry.getValue().getSlots() - 1; i >= 0; i--) {
+                    ItemStack stack = stacks.getStackInSlot(i);
+                    if (!stack.isEmpty() && stack.getItem() instanceof GodfallTrinketItem) {
+                        player.getInventory().placeItemBackInInventory(stack);
+                        stacks.setStackInSlot(i, ItemStack.EMPTY);
+                    }
+                }
+            }
         });
     }
 
@@ -363,27 +385,6 @@ public class TrinketGrowthEvents {
                 player.displayClientMessage(
                         Component.translatable("message.godfall_trinkets.cant_sleep"), true);
                 event.setResult(Player.BedSleepingProblem.OTHER_PROBLEM);
-            }
-        });
-    }
-
-    /** 破厄之核被取下时，自动弹出所有依赖它的子饰品 */
-    @SubscribeEvent
-    public static void onCurioChange(CurioChangeEvent event) {
-        if (!(event.getEntity() instanceof Player player)) return;
-        if (player.level().isClientSide) return;
-        if (!event.getFrom().is(ModItems.BROKEN_CORE.get())) return;
-        if (!event.getTo().isEmpty()) return;
-        CuriosApi.getCuriosInventory(player).resolve().ifPresent(handler -> {
-            for (var entry : handler.getCurios().entrySet()) {
-                var stacks = entry.getValue().getStacks();
-                for (int i = entry.getValue().getSlots() - 1; i >= 0; i--) {
-                    ItemStack stack = stacks.getStackInSlot(i);
-                    if (!stack.isEmpty() && stack.getItem() instanceof GodfallTrinketItem) {
-                        player.getInventory().placeItemBackInInventory(stack);
-                        stacks.setStackInSlot(i, ItemStack.EMPTY);
-                    }
-                }
             }
         });
     }

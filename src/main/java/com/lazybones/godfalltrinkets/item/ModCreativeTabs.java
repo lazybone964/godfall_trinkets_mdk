@@ -96,6 +96,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.SHARD_STAR.get());
                         output.accept(ModItems.SHARD_RUNE.get());
                         output.accept(ModItems.ADVANCEMENT_TALLY_TRINKET.get());
+                        output.accept(ModItems.STOMACH_POUCH.get());
                     })
                     .build());
 }

@@ -10,7 +10,6 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -199,6 +198,20 @@ public class GodCoreEvents {
 
         p.getPersistentData().putBoolean("godfall_got_broken_core", true);
         p.getInventory().add(new ItemStack(ModItems.BROKEN_CORE.get()));
+    }
+
+    /** 玩家死亡重生时保留已发放标记，避免重复发放破厄之核/进化石 */
+    @SubscribeEvent
+    public static void onPlayerClone(PlayerEvent.Clone event) {
+        if (!event.isWasDeath()) return;
+        var oldData = event.getOriginal().getPersistentData();
+        var newData = event.getEntity().getPersistentData();
+        if (oldData.contains("godfall_got_broken_core")) {
+            newData.putBoolean("godfall_got_broken_core", oldData.getBoolean("godfall_got_broken_core"));
+        }
+        if (oldData.contains("godfall_got_evolution_stone")) {
+            newData.putBoolean("godfall_got_evolution_stone", oldData.getBoolean("godfall_got_evolution_stone"));
+        }
     }
 
     private static void tryGrantEvolutionStone(Player p) {

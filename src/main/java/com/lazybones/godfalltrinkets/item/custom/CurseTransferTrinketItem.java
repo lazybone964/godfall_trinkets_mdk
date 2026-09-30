@@ -11,6 +11,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -241,6 +242,12 @@ public class CurseTransferTrinketItem extends Item implements ICurioItem {
     @Override
     public ICurio.DropRule getDropRule(SlotContext slotContext, DamageSource source, int lootingLevel, boolean recentlyHit, ItemStack stack) {
         //死亡永远保留饰品，不掉落
+        return ICurio.DropRule.ALWAYS_KEEP;
+    }
+
+    @Override
+    public ICurio.DropRule getDropRule(LivingEntity livingEntity, ItemStack stack) {
+        //死亡永远保留饰品，不掉落（旧签名兼容）
         return ICurio.DropRule.ALWAYS_KEEP;
     }
 }

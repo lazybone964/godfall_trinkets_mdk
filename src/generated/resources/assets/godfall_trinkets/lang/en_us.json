@@ -127,6 +127,7 @@
   "item.godfall_trinkets.sharp_edge_ring": "Sharp Edge Ring",
   "item.godfall_trinkets.shock_amulet": "Shock Amulet",
   "item.godfall_trinkets.soul_drain_ring": "Soul Drain Ring",
+  "item.godfall_trinkets.stomach_pouch": "Stomach Pouch",
   "item.godfall_trinkets.tough_bone_amulet": "Tough Bone Amulet",
   "item.godfall_trinkets.tough_heart_ring": "Tough Heart Ring",
   "item.godfall_trinkets.treasure_amulet": "Treasure Amulet",
@@ -205,5 +206,14 @@
   "tooltip.godfall_trinkets.hold_shift": "Hold Shift to view curses and blessings",
   "tooltip.godfall_trinkets.hold_shift_view_stats": "Hold SHIFT to view current bonuses",
   "tooltip.godfall_trinkets.require_core": "§cRequires Broken Core equipped",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_armor": "▶ Armor Percentage Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_atk_spd": "▶ Attack Speed Percentage Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_dmg": "▶ All‑Damage Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_hp": "▶ Max Health Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_kr": "▶ Knockback Resistance: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_luck": "▶ Luck Percentage Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.bonus_tough": "▶ Armor Toughness Percentage Bonus: %.1f%%",
+  "tooltip.godfall_trinkets.stomach_pouch.desc": "Consumes food and stores its nutrition. Gain percentage‑based attribute bonuses from stored hunger and saturation. Does not decay over time; some stored nutrition will be lost upon death while equipped.",
+  "tooltip.godfall_trinkets.stomach_pouch.store": "Stored Hunger: %d | Stored Saturation: %.1f",
   "tooltip.godfall_trinkets.tier": "Tier: %s"
 }

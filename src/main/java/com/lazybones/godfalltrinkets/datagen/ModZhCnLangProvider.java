@@ -446,5 +446,15 @@ public class ModZhCnLangProvider extends LanguageProvider {
 // ========== 自定义Debuff效果名称 ==========
         add("effect.godfall_trinkets.abyss_mark", "深渊标记");
         add("effect.godfall_trinkets.fallen_wrath_stack", "神陨怒层");
+        add("item.godfall_trinkets.stomach_pouch", "大胃袋");
+        add("tooltip.godfall_trinkets.stomach_pouch.desc", "进食时储存食物的营养；依靠储存的饥饿与饱和度获得大量百分比属性加成。不会自然消耗，玩家佩戴状态死亡会按比例损失部分储存营养。");
+        add("tooltip.godfall_trinkets.stomach_pouch.store","已储存饥饿：%d | 已储存饱和度：%.1f");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_dmg","▶全伤害加成：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_hp","▶生命上限加成：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_armor","▶护甲百分比加成：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_tough","▶护甲韧性百分比加成：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_kr","▶击退抗性：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_luck","▶幸运百分比加成：%.1f%%");
+        add("tooltip.godfall_trinkets.stomach_pouch.bonus_atk_spd","▶攻击速度百分比加成：%.1f%%");
     }
 }

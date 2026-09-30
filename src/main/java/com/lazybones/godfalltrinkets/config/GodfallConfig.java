@@ -76,11 +76,25 @@ public class GodfallConfig {
     public static final ForgeConfigSpec.BooleanValue BOSS_EXTRA_DROP;
 
     // ==================== 模块五：盔甲 & 饰品套装 ====================
-
     public static final ForgeConfigSpec.DoubleValue ARMOR_SET_DAMAGE_MOD;
     public static final ForgeConfigSpec.DoubleValue ARMOR_DAMAGE_TAKEN_MOD;
     public static final ForgeConfigSpec.IntValue CURSE_TRINKET_MAX_DURABILITY;
     public static final ForgeConfigSpec.DoubleValue TRINKET_LUCK_GLOBAL;
+
+    // ========== 大胃袋 Stomach‑Pouch 全部配置 ==========
+    public static final ForgeConfigSpec.IntValue STOMACH_MAX_HUNGER;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_MAX_SATURATION;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_DEATH_DRAIN_RATIO;
+
+    // 属性封顶（倍率，1.0 = +100%）
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_DMG_BONUS;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_MAXHP_BONUS;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_ARMOR_BONUS;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_TOUGH_BONUS;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_KNOCKBACK_RESIST;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_LUCK_BONUS;
+    public static final ForgeConfigSpec.DoubleValue STOMACH_FULL_ATKSPEED_BONUS;
+
 
     // ==================== 模块六：全局功能总开关 ====================
 
@@ -234,7 +248,29 @@ public class GodfallConfig {
         ARMOR_DAMAGE_TAKEN_MOD = b.comment("全套承伤减免倍率（1.0=原版）").defineInRange("armor_damage_taken_mod", 1.0, 0.0, 100.0);
         CURSE_TRINKET_MAX_DURABILITY = b.comment("咒厄转移坠最大耐久").defineInRange("curse_trinket_max_durability", 1000, 1, 100000);
         TRINKET_LUCK_GLOBAL = b.comment("所有饰品幸运加成统一缩放").defineInRange("trinket_luck_global", 1.0, 0.0, 100.0);
+        // -------- 大胃袋配置 --------
+        STOMACH_MAX_HUNGER = b.comment("大胃袋最大可储存饥饿点数").defineInRange("stomach_max_hunger",200,0,10000);
+        STOMACH_MAX_SATURATION = b.comment("大胃袋最大可储存饱和度点数").defineInRange("stomach_max_saturation",100.0,0.0,10000.0);
+        STOMACH_DEATH_DRAIN_RATIO = b.comment("玩家死亡时，佩戴中大胃袋扣除储存量比例；0.4=扣除40%，保留60%；0=死亡不扣任何存量")
+                .defineInRange("stomach_death_drain_ratio",0.4,0.0,1.0);
+
+        STOMACH_FULL_DMG_BONUS = b.comment("储存拉满时 全伤害加成倍率，0.6 = +60%")
+                .defineInRange("stomach_full_dmg_bonus",0.60,0.0,5.0);
+        STOMACH_FULL_MAXHP_BONUS = b.comment("储存拉满时 生命上限加成倍率，1.0 = +100%")
+                .defineInRange("stomach_full_maxhp_bonus",1.00,0.0,5.0);
+        STOMACH_FULL_ARMOR_BONUS = b.comment("储存拉满时 护甲百分比加成倍率，1.0 = +100%")
+                .defineInRange("stomach_full_armor_bonus",1.00,0.0,5.0);
+        STOMACH_FULL_TOUGH_BONUS = b.comment("储存拉满时 护甲韧性百分比加成倍率，1.0 = +100%")
+                .defineInRange("stomach_full_tough_bonus",1.00,0.0,5.0);
+        STOMACH_FULL_KNOCKBACK_RESIST = b.comment("储存拉满时 击退抗性上限，0.85=85%，最大不要超过1.0")
+                .defineInRange("stomach_full_knockback_resist",0.85,0.0,1.0);
+        STOMACH_FULL_LUCK_BONUS = b.comment("储存拉满时 幸运百分比加成倍率，2.0 = +200%")
+                .defineInRange("stomach_full_luck_bonus",2.00,0.0,5.0);
+        STOMACH_FULL_ATKSPEED_BONUS = b.comment("储存拉满时 攻击速度百分比加成倍率，1.5 = +150%")
+                .defineInRange("stomach_full_atkspeed_bonus",1.50,0.0,5.0);
+
         b.pop();
+
 
         // ── 模块六：全局功能总开关 ──
         b.push("6. 全局功能总开关");

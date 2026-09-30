@@ -1,4 +1,4 @@
-// 1.20.1	2026-09-26T00:38:53.6821732	Item Models: godfall_trinkets
+// 1.20.1	2026-09-30T00:52:32.0422698	Item Models: godfall_trinkets
 88d90737119756a6f277c5a6e8729a33ed7614e3 assets/godfall_trinkets/models/item/abyss_god_boots.json
 a3a4fea7f80f556f3373068fbb4e984a5b3a6299 assets/godfall_trinkets/models/item/abyss_god_chestplate.json
 14a0852d40dd350176c7a1c781d357e8c7639dcd assets/godfall_trinkets/models/item/abyss_god_helmet.json
@@ -63,6 +63,7 @@ b59e1782f71df6e7436028aa7ecb02928380d582 assets/godfall_trinkets/models/item/sha
 0ac59dcaeafe2c8995e1e35adf23eedabbbbde26 assets/godfall_trinkets/models/item/sharp_edge_stone.json
 ed46fbca14f16567f4e0ae40b31168195ea23c17 assets/godfall_trinkets/models/item/shock_amulet.json
 787ac9844411000bffb0c3354179fbe4b72de664 assets/godfall_trinkets/models/item/soul_drain_ring.json
+4f151fadc3e3391f420b4682a66158f36038b21b assets/godfall_trinkets/models/item/stomach_pouch.json
 79d06d4c73cefe12d7b2e9b8afa9812cc012dfd9 assets/godfall_trinkets/models/item/tough_bone_amulet.json
 48b4c5a0ac7b230a86036ce8a117f83cf5cd3c3d assets/godfall_trinkets/models/item/tough_heart_ring.json
 08097d38395b18ad6a9d8f6698717a593831b0b4 assets/godfall_trinkets/models/item/treasure_amulet.json
